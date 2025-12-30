@@ -4,10 +4,10 @@ import StickyCard from "./StickyCard";
 
 const PortfolioSection = () => {
   return (
-    <section className="min-h-screen flex flex-col gap-12 items-center bg-white pt-28">
+    <section className="min-h-screen flex flex-col gap-12 items-center bg-black pt-28">
       <HeadingComponent
         heading="Check Out What We’ve Delivered"
-        variant="gradient"
+        variant="secondary"
       />
       <div>
         {projects.map((project, index) => (

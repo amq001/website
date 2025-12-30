@@ -5,12 +5,14 @@ import React, { useEffect, useRef } from "react";
 interface Props {
   children: React.ReactNode;
   width?: "fit-content" | "full-width";
+  className?: string;
   simpleReveal?: boolean;
 }
 
 const Reveal = ({
   children,
   width = "fit-content",
+  className,
   simpleReveal = false,
 }: Props) => {
   const ref = useRef(null);
@@ -29,7 +31,7 @@ const Reveal = ({
     <div
       className={`relative ${
         width === "full-width" ? "w-full" : "w-fit"
-      } overflow-hidden`}
+      } overflow-hidden ${className}`}
       ref={ref}
     >
       <motion.div

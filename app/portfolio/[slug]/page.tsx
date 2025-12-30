@@ -1,4 +1,5 @@
-import { projects, ProjectType } from "@/constants/dummy";
+"use client"
+import { projects } from "@/constants/dummy";
 // import { projects } from "../../../data/projects";
 
 type ProjectPageProps = {
@@ -7,25 +8,33 @@ type ProjectPageProps = {
   };
 };
 
+type ProjectType = {
+  title: string;
+  description: string;
+  slug: string;
+  src: string;
+  link: string;
+  color: string;
+};
+
 export default function ProjectPage({ params }: ProjectPageProps) {
   const { slug } = params;
 
   // Find the project based on slug
-  const project = projects.find((p: ProjectType) => p.slug === slug);
+  const project = projects.find((p) => p.slug == slug);
+  console.log(project, params,slug,"Hello")
 
   if (!project) {
-    return <p>Project not found</p>;
+    return <p>{slug}</p>;
   }
 
   return (
-    <div style={{ backgroundColor: project.color, padding: "2rem" }}>
+    <div>
       <h1>{project.title}</h1>
       <p>{project.description}</p>
       <img src={`/images/${project.src}`} alt={project.title} width={400} />
       <p>
-        <a href={project.link} target="_blank" rel="noopener noreferrer">
           View Full Project
-        </a>
       </p>
     </div>
   );
