@@ -15,7 +15,7 @@ const AnimatedParagraph = ({paragraph}: {paragraph: string}) => {
   const words = paragraph.split(" ");
 
   return (
-    <div className="h-screen w-full bg-black flex flex-col gap-4 items-center justify-center bg-[linear-gradient(0deg,#000_20%,#F37036_200%)]">
+    <div className="h-screen w-full bg-black flex flex-col gap-4 items-center justify-center bg-[linear-gradient(0deg,#000_20%,#1900d0_200%)]">
       <HeadingComponent heading="Why Us?" variant="secondary" />
       <motion.p
         ref={ref}

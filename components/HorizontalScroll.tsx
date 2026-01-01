@@ -46,7 +46,7 @@ const HorizontalScroll = () => {
   return (
     <section
       ref={sectionRef}
-      className="relative h-[500vh] [background:radial-gradient(125%_125%_at_50%_90%,#000_40%,#F37036_100%)] "
+      className="relative h-[500vh] [background:radial-gradient(125%_125%_at_50%_90%,#000_40%,#1900d0_100%)] "
     >
       <div className="sticky top-0 h-screen overflow-hidden flex items-center">
         <motion.div

@@ -23,7 +23,7 @@ const StickyCard = ({
   return (
     <div
       className={
-        "h-screen box-border flex w-[calc(100vw-32px)] items-center justify-center sticky top-0 px-4 sm:px-8 md:px-20"
+        "h-screen box-border flex w-[calc(100vw-32px)] mx-auto items-center justify-center sticky top-0 px-2 sm:px-8 md:px-20"
       }
     >
       <div

@@ -3,8 +3,10 @@ import ContactUsSection from "@/components/ContactUsSection";
 import Footer from "@/components/Footer";
 import HeroSection3 from "@/components/HeroSection3";
 import HorizontalScroll from "@/components/HorizontalScroll";
+import { InfiniteMovingCardsDemo } from "@/components/InfiniteMovingCardsDemo";
 import PortfolioSection from "@/components/PortfolioSection";
 import { ProcessSection } from "@/components/ProcessSection";
+import ReviewsSection from "@/components/ReviewsSection";
 import { websiteData } from "@/constants/dummy";
 // import IndustriesSection from "@/components/IndustriesSection";
 // import ProcessSection from "@/components/PortfolioSection";
@@ -58,21 +60,22 @@ export default function Home() {
       {/* <TechnologiesSection /> */}
       {/* Animated Paragraph */}
       {/* <div className="h-[100vh] bg-black"></div> */}
-      {/* <AnimatedParagraph
-        paragraph={`        We believe great products are built on trust, transparency, and close
+      <AnimatedParagraph
+        paragraph={`We believe great products are built on trust, transparency, and close
         collaboration. Our highly skilled team brings deep technical expertise
         and industry experience to every project, ensuring solutions are
         scalable, efficient, and future-ready. We work side by side with you,
         maintaining clear communication and complete visibility throughout the
         development journey.`}
-      /> */}
+      />
+      <InfiniteMovingCardsDemo />
 
       {/* </AnimatedParagraph> */}
       {/* <div className="h-[100vh] bg-black"></div> */}
       {/* Contact us section */}
       <ContactUsSection />
       {/* <AnimatedParagraph /> */}
-      {/* <Footer /> */}
+      <Footer />
     </div>
   );
 }

@@ -63,10 +63,12 @@ const Navbar = () => {
               className={`
                 ${
                   pathname === link.href
-                    ? "text-[#F37036]"
-                    : "text-gray-300 hover:text-[#F37036]"
+                    ? "text-gray-100"
+                    : "text-gray-400 hover:text-gray-100"
                 }
                 font-semibold
+                ease-in-out
+                duration-200
                 `}
             >
               {link.label}
@@ -83,12 +85,14 @@ const Navbar = () => {
               {isMobileMenuOpen ? (
                 <BiMenu
                   size={30}
+                  color="#fff"
                   // className="text-white hover:text-black"
                   // onClick={() => setIsMobileMenuOpen(false)}
                 />
               ) : (
                 <BiX
                   size={30}
+                  color="#fff"
                   // className="text-white hover:text-black"
                   // onClick={() => setIsMobileMenuOpen(true)}
                 />

@@ -1,13 +1,19 @@
-import designImage from "../public/images/designn.png";
-import developmentImage from "../public/images/developmentt.png";
 import ecommerceImage from "../public/images/ecommerce.png";
 import fintechImage from "../public/images/fintech.png";
 import healthImage from "../public/images/health.png";
-import ideateImage from "../public/images/ideatee.png";
-import liveImage from "../public/images/livee.png";
+import ideateImage from "../public/images/png/ideateWhite-removebg-preview.png";
+// import ideateImage from "../public/images/ideatee.png";
+import designImage from "../public/images/png/designWhite-removebg-preview.png";
+// import designImage from "../public/images/designn.png";
+import developmentImage from "../public/images/png/developmentWhite-removebg-preview.png";
+// import developmentImage from "../public/images/developmentt.png";
+import liveImage from "../public/images/png/liveWhite-removebg-preview.png";
+// import liveImage from "../public/images/livee.png";
 import logisticsImage from "../public/images/logistics.png";
-import qaImage from "../public/images/qaa.png";
-import supportImage from "../public/images/supportt.png";
+import qaImage from "../public/images/png/qaWhite-removebg-preview.png";
+// import qaImage from "../public/images/qaa.png";
+import supportImage from "../public/images//png/supportWhite-removebg-preview.png";
+// import supportImage from "../public/images/supportt.png";
 
 // export type ProjectType = {
 //   title: string;
@@ -27,6 +33,36 @@ deliver balanced, high-confidence insights`,
       "Originally hailing from Austria, Berlin-based photographer Matthias Leindinger is a young creative brimming with talent and ideas.",
     slug: "SymposAi",
     src: "/images/symposImg1.png",
+    // link: "",
+    // color: "#BBACAF",
+  },
+    {
+    title: "Razacar",
+    tagline: `Razacar is a smart, community driven carpooling platform that makes daily commuting
+affordable, secure, and eco friendly for organizations`,
+    description: `Razacar is an organization focused ride booking and carpooling platform designed to simplify
+daily commuting while reducing costs and environmental impact. Similar to popular ride hailing
+services, Razacar goes a step further by enabling employees within the same organization to
+share rides safely and conveniently.
+By intelligently matching commuters based on routes, preferences, and schedules, Razacar
+helps maximize vehicle utilization and minimize traffic congestion. The platform ensures privacy
+by restricting access to verified members of the same organization, creating a trusted and
+secure commuting ecosystem. With shared expenses and fewer vehicles on the road, Razacar
+delivers a smarter, greener, and more affordable way to commute every day`,
+    slug: "Razacar",
+    src: "/images/razacar1.png",
+    // link: "",
+    // color: "#BBACAF",
+  },
+  {
+    title: "DivAuctions",
+    tagline: `Div Auction is a flexible, all in one auction and e-commerce platform built to power smarter online selling`,
+    description: `Div Auction is a modern, end to end auction and e-commerce solution designed to help businesses launch, manage, and scale online marketplaces with ease. The platform supports both traditional auctions and instant “Buy Now” listings, giving sellers complete flexibility in how they sell their products.
+    Built for reliability and growth, Div Auction streamlines critical operations such as automated invoice generation, secure online payments, and customer management. Its adaptable architecture allows the platform to be customized to match unique business models, workflows, and branding requirements whether for niche auctions or full-scale e-commerce operations.
+With a focus on performance, security, and seamless user experience, Div Auction empowers businesses to stay competitive in today’s fast moving digital marketplace
+`,
+    slug: "DivAuctions",
+    src: "/images/divauction.png",
     // link: "",
     // color: "#BBACAF",
   },
@@ -60,36 +96,6 @@ diverse use cases with ease.`,
     // color: "#BBACAF",
   },
   {
-    title: "Razacar",
-    tagline: `Razacar is a smart, community driven carpooling platform that makes daily commuting
-affordable, secure, and eco friendly for organizations`,
-    description: `Razacar is an organization focused ride booking and carpooling platform designed to simplify
-daily commuting while reducing costs and environmental impact. Similar to popular ride hailing
-services, Razacar goes a step further by enabling employees within the same organization to
-share rides safely and conveniently.
-By intelligently matching commuters based on routes, preferences, and schedules, Razacar
-helps maximize vehicle utilization and minimize traffic congestion. The platform ensures privacy
-by restricting access to verified members of the same organization, creating a trusted and
-secure commuting ecosystem. With shared expenses and fewer vehicles on the road, Razacar
-delivers a smarter, greener, and more affordable way to commute every day`,
-    slug: "Razacar",
-    src: "/images/razacar1.png",
-    // link: "",
-    // color: "#BBACAF",
-  },
-  {
-    title: "DivAuctions",
-    tagline: `Div Auction is a flexible, all in one auction and e-commerce platform built to power smarter online selling`,
-    description: `Div Auction is a modern, end to end auction and e-commerce solution designed to help businesses launch, manage, and scale online marketplaces with ease. The platform supports both traditional auctions and instant “Buy Now” listings, giving sellers complete flexibility in how they sell their products.
-    Built for reliability and growth, Div Auction streamlines critical operations such as automated invoice generation, secure online payments, and customer management. Its adaptable architecture allows the platform to be customized to match unique business models, workflows, and branding requirements whether for niche auctions or full-scale e-commerce operations.
-With a focus on performance, security, and seamless user experience, Div Auction empowers businesses to stay competitive in today’s fast moving digital marketplace
-`,
-    slug: "DivAuctions",
-    src: "/images/divauction.png",
-    // link: "",
-    // color: "#BBACAF",
-  },
-  {
     title: "Dawam",
     tagline: `Dawam is an integrated healthcare platform connecting patients with trusted clinics, pharmacies, and diagnostic services seamlessly and securely`,
     description: `Dawam Healthcare is a comprehensive digital healthcare platform designed to simplify how patients access quality medical services. The platform brings together specialized consultant clinics, temperature controlled pharmacies, and internationally standardized diagnostic laboratories under one unified experience.
@@ -97,23 +103,6 @@ Built with a patient first approach, Dawam enables users to easily find doctors 
 `,
     slug: "Dawam",
     src: "/images/dawam.png",
-    // link: "",
-    // color: "#BBACAF",
-  },
-  {
-    title: "Virtual CEO",
-    tagline: `Your complete marketing, sales, and tech tea on subscription, without the hiring hassle`,
-    description: `VirtualCEO is a subscription-based platform designed to help business owners and
-entrepreneurs scale faster by giving them instant access to fully managed marketing, sales, and
-technology teams. Instead of spending months recruiting, onboarding, and managing talent,
-businesses can rely on experienced professionals who operate as an extension of their
-organization.
-With flexible plans, predictable costs, and zero HR headaches, VirtualCEO empowers
-companies to focus on growth while expert teams handle execution. Whether you’re a startup,
-growing business, or established brand, VirtualCEO delivers the people, processes, and
-performance needed to move forward with confidence.`,
-    slug: "VirtualCEO",
-    src: "/images/virtualCeo.png",
     // link: "",
     // color: "#BBACAF",
   },
@@ -136,6 +125,23 @@ Built with a strong focus on privacy and usability, Carbyne ensures that only th
 `,
     slug: "carbyne",
     src: "/images/carbyne.png",
+    // link: "",
+    // color: "#BBACAF",
+  },
+    {
+    title: "Virtual CEO",
+    tagline: `Your complete marketing, sales, and tech tea on subscription, without the hiring hassle`,
+    description: `VirtualCEO is a subscription-based platform designed to help business owners and
+entrepreneurs scale faster by giving them instant access to fully managed marketing, sales, and
+technology teams. Instead of spending months recruiting, onboarding, and managing talent,
+businesses can rely on experienced professionals who operate as an extension of their
+organization.
+With flexible plans, predictable costs, and zero HR headaches, VirtualCEO empowers
+companies to focus on growth while expert teams handle execution. Whether you’re a startup,
+growing business, or established brand, VirtualCEO delivers the people, processes, and
+performance needed to move forward with confidence.`,
+    slug: "VirtualCEO",
+    src: "/images/virtualCeo.png",
     // link: "",
     // color: "#BBACAF",
   },

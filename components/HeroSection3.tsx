@@ -1,5 +1,7 @@
 import Reveal from "./Reveal";
 import TextCycleAnimation from "./TextCycleAnimation";
+import { InfiniteMovingText } from "./ui/infinite-moving-text";
+import { WavyBackground } from "./ui/wavy-background";
 
 type Prop = {
   heading: string;
@@ -16,35 +18,63 @@ const HeroSection3 = ({
   type = "standard",
 }: Prop) => {
   return (
-    <div
-      className="min-h-screen w-full flex flex-col gap-4 items-center
-    bg-[url('/images/heroImage.png')] bg-cover bg-center
-    ] justify-center"
-    >
-      <div
-        className={`flex flex-col ${
-          type === "hero" && "h-[120px] md:h-[150px]"
-        } leading-relaxed gap-2 items-center px-4 text-center`}
-      >
+    <WavyBackground className="max-w-screen">
+      <div className="relative min-h-screen w-full overflow-x-hidden flex flex-col gap-4 items-center justify-center">
+        <div
+          className={`flex flex-col leading-relaxed gap-2 items-center text-center`}
+        >
+          <Reveal>
+            <h1 className="text-3xl md:text-7xl font-medium text-white">
+              {heading}
+            </h1>
+            {textCycle && (
+              <TextCycleAnimation
+                words={textCycle}
+                className="text-3xl h-2 leading-snug md:text-7xl text-[#ffffff]"
+              />
+            )}
+          </Reveal>
+        </div>
         <Reveal>
-          <h1 className="text-3xl md:text-7xl font-medium text-white">
-            {heading}
-          </h1>
-          {textCycle && (
-            <TextCycleAnimation
-              words={textCycle}
-              className="text-3xl md:text-7xl text-[#F37036]"
-            />
-          )}
+          <p className="text-md text-white md:text-xl font-medium px-4 max-w-2xl text-center">
+            {description}
+          </p>
         </Reveal>
+        <div className="flex flex-col gap-4 absolute bottom-20 ">
+          <h3 className="text-white  px-4 text-[18px] text-center font-semibold">
+            Our solutions are recognized by
+          </h3>
+          <div className="relative w-full overflow-x-hidden">
+          <InfiniteMovingText
+          className="w-screen"
+            items={[
+              "Google",
+              "Obvio",
+              "lunedata",
+              "Innovit",
+              "Teggior",
+              "Cannar",
+              "Google",
+              "Obvio",
+              "lunedata",
+              "Innovit",
+              "Teggior",
+              "Cannar",
+              "Google",
+              "Obvio",
+              "lunedata",
+              "Innovit",
+              "Teggior",
+              "Cannar",
+            ]}
+            speed="fast"
+            />
+            </div>
+        </div>
       </div>
-      <Reveal>
-        <p className="text-md text-white md:text-xl font-medium px-4 max-w-2xl text-center">
-          {description}
-        </p>
-      </Reveal>
-    </div>
+    </WavyBackground>
   );
 };
 
 export default HeroSection3;
+// F37036

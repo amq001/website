@@ -1,6 +1,7 @@
 import ContactUsSection from "@/components/ContactUsSection";
 import Footer from "@/components/Footer";
 import HeroSection3 from "@/components/HeroSection3";
+import { InfiniteMovingCardsDemo } from "@/components/InfiniteMovingCardsDemo";
 import SectionComponent from "@/components/SectionComponent";
 import StickyCard from "@/components/StickyCard";
 import { projects } from "@/constants/dummy";
@@ -12,16 +13,18 @@ const page = () => {
         heading={"Our Portfolio"}
         description="Explore our portfolio, where we highlight our most impactful solutions & projects. Our work reflects our commitment to delivering customized, innovative solutions tailored to meet the unique demands of each client"
       />
-      <div>
+      <div className="bg-black">
         {projects.map((project, index) => (
           <StickyCard key={index} {...project} />
         ))}
       </div>
+      <InfiniteMovingCardsDemo />
+      <ContactUsSection />
+      <Footer />
       {/* {data.map((item, k) => (
         <SectionComponent key={k} {...item} index={k} />
       ))}
-      <ContactUsSection />
-      <Footer /> */}
+      */}
     </div>
   );
 };
