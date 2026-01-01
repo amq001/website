@@ -15,7 +15,7 @@ const page = () => {
       />
       <div className="bg-black">
         {projects.map((project, index) => (
-          <StickyCard key={index} {...project} />
+          <StickyCard key={index} {...project} variant="secondary" />
         ))}
       </div>
       <InfiniteMovingCardsDemo />

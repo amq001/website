@@ -13,6 +13,7 @@ import logisticsImage from "../public/images/logistics.png";
 import qaImage from "../public/images/png/qaWhite-removebg-preview.png";
 // import qaImage from "../public/images/qaa.png";
 import supportImage from "../public/images//png/supportWhite-removebg-preview.png";
+import { desc } from "motion/react-client";
 // import supportImage from "../public/images/supportt.png";
 
 // export type ProjectType = {
@@ -226,4 +227,38 @@ export const websiteData = {
       },
     ],
   },
+  services: {
+    heading: "See What We Offer",
+    servicesCards: [
+      {title :"AI-Powered Full-Stack Solutions"
+       ,description: `
+       End-to-end applications built with AI at the core. Smart, scalable, and ready to solve real problems.
+       ` 
+      },
+      {title :"AI Integration & Automation",
+        description: `We add AI to your existing systems to automate tasks, improve efficiency, and unlock smarter workflows.
+        `},
+      {title :"Product Design & UX",
+        description: `Thoughtful design focused on usability, clarity, and experiences users actually enjoy.`
+        },
+      {title :"AI-Driven Website Automation",
+        description: `Smart websites that automate processes, personalize content, and work for your business around the clock.`
+        },
+      {title :"Full-Stack Web Development",
+        description: `Reliable, high-performance web applications built to scale with your business.`
+        },
+        {title :"Mobile App Development",
+        description: `Fast, intuitive mobile apps that feel natural on both iOS and Android.`
+        },
+
+
+
+
+
+
+
+
+
+    ]
+  }
 };

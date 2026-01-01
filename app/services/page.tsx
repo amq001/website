@@ -10,6 +10,8 @@ const page = () => {
         heading={"Our Services"}
         description="Explore our diverse range of services, where we deliver innovative, customized solutions tailored to the unique needs of each client.Whether it's advanced technology implementations or strategic insights, our offerings reflect a commitment to seamless integration and exceptional performance. "
       />
+      <div>
+
       {data.map((item, index) => (
         <SectionComponent
           key={index}
@@ -19,6 +21,7 @@ const page = () => {
           index={index}
         />
       ))}
+      </div>
       <ContactUsSection />
       <Footer />
     </div>

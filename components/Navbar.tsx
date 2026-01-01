@@ -104,7 +104,7 @@ const Navbar = () => {
       <div
         className={`md:hidden transition-all duration-300 ease-in-out ${
           !isMobileMenuOpen
-            ? "max-h-64 rounded-md opacity-100 backdrop-filter backdrop-blur-md bg-black/50"
+            ? "max-h-64 rounded-2xl mt-2 opacity-100 backdrop-filter backdrop-blur-md bg-black/50"
             : "max-h-0 opacity-0 overflow-hidden"
         }`}
       >

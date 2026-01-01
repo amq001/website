@@ -17,8 +17,8 @@ type ProjectType = {
   color: string;
 };
 
-export default function ProjectPage({ params }: ProjectPageProps) {
-  const { slug } = params;
+export default async function ProjectPage({ params }: ProjectPageProps) {
+  const { slug } = await params;
 
   // Find the project based on slug
   const project = projects.find((p) => p.slug == slug);

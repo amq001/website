@@ -6,6 +6,7 @@ import HorizontalScroll from "@/components/HorizontalScroll";
 import { InfiniteMovingCardsDemo } from "@/components/InfiniteMovingCardsDemo";
 import PortfolioSection from "@/components/PortfolioSection";
 import { ProcessSection } from "@/components/ProcessSection";
+import ProcessSection2 from "@/components/ProcessSection2";
 import ReviewsSection from "@/components/ReviewsSection";
 import { websiteData } from "@/constants/dummy";
 // import IndustriesSection from "@/components/IndustriesSection";
@@ -45,7 +46,8 @@ export default function Home() {
             precision."
       /> */}
       {/* --- development process */}
-      <HorizontalScroll />
+      {/* <HorizontalScroll cards={websiteData.process.processCards} /> */}
+      <ProcessSection2 cards={websiteData.services.servicesCards} />
       {/* --- Industries Section --- */}
       <ProcessSection
         heading={websiteData.industries.heading}

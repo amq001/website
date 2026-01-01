@@ -9,6 +9,7 @@ type CardProps = {
   tagline?: String;
   src: string;
   slug?: string;
+  variant?: "primary" | "secondary";
   color?: string;
 };
 
@@ -18,25 +19,27 @@ const StickyCard = ({
   description,
   src,
   slug,
+  variant = "primary",
   color,
 }: CardProps) => {
   return (
     <div
+      data-variant={variant}
       className={
-        "h-screen box-border flex w-[calc(100vw-32px)] mx-auto items-center justify-center sticky top-0 px-2 sm:px-8 md:px-20"
+        "h-screen box-border flex w-[calc(100vw-32px)] mx-auto items-center justify-center sticky top-0 data-[variant=primary]:px-2 data-[variant=primary]:sm:px-8 data-[variant=primary]:md:px-20"
       }
     >
       <div
-        className={`bg-black rounded-2xl box-border flex text-white my-4 w-full min-h-[calc(100vh-50px)]`}
+        className={`bg-black rounded-2xl box-border flex text-white data-[variant=primary]:my-4 w-full min-h-[calc(100vh-50px)]`}
       >
         <div className="relative w-full rounded-2xl">
-          <div className="absolute w-full h-full rounded-2xl" style={{ boxShadow: "0px 0px 20px rgba(150,120,120,0.5)" }}></div>
+          <div className="absolute w-full h-full rounded-2xl data-[variant=primary]:shadow-[0_0_20px_rgba(150,120,120,0.5)]"></div>
           <div className="p-2 md:p-4 z-100 flex max-w-2xl mx-auto flex-col gap-2 w-full h-full items-center justify-center">
             <Reveal className="z-100">
             <h2 className="text-2xl md:text-7xl font-bold text-center  drop-shadow-lg">{title}</h2>
             </Reveal>
             <Reveal className="z-100">
-            <p className="text-md md:text-2xl z-100 text-center  drop-shadow-[2px_2px_6px_rgba(0,0,0,0.6)]">{tagline}</p>
+            <p className="text-md md:text-2xl z-100 text-center drop-shadow-[2px_2px_6px_rgba(0,0,0,0.6)]">{tagline}</p>
             </Reveal>
             <div className="z-100">
             <Link href={`/portfolio/${slug}`} rel="noopener noreferrer">
