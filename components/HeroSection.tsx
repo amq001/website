@@ -1,25 +1,80 @@
 import Reveal from "./Reveal";
+import TextCycleAnimation from "./TextCycleAnimation";
+import { InfiniteMovingText } from "./ui/infinite-moving-text";
+import { WavyBackground } from "./ui/wavy-background";
 
-const HeroSection = () => {
+type Prop = {
+  heading: string;
+  description: string;
+  textCycle?: string[];
+  type?: "hero" | "standard";
+};
+// bg-black [background:radial-gradient(125%_125%_at_50%_10%,#000_40%,#F37036_100%)
+
+const HeroSection = ({
+  heading,
+  description,
+  textCycle,
+  type = "standard",
+}: Prop) => {
   return (
-    // <section className="min-h-screen w-full flex items-center justify-center bg-animated-gradient animate-gradient-shift">
-    <section className="min-h-screen w-full flex items-center justify-center">
-      <div className="absolute inset-0 -z-10 h-full w-full items-center px-5 py-24 [background:radial-gradient(125%_125%_at_50%_10%,#000_40%,#F37036_100%)]"></div>
-      <div className=" flex px-4 flex-col text-center gap-6 max-w-4xl">
+    <WavyBackground className="max-w-screen overflow-x-hidden">
+      <div className="relative min-h-screen max-w-screen overflow-x-hidden flex flex-col gap-4 items-center justify-center">
+        <div
+          className={`flex flex-col leading-relaxed gap-2 items-center text-center px-4`}
+        >
+          <Reveal>
+            <h1 className="text-3xl md:text-7xl font-medium text-white">
+              {heading}
+            </h1>
+            {textCycle && (
+              <TextCycleAnimation
+                words={textCycle}
+                className="text-3xl h-2 leading-snug md:text-7xl text-[#ffffff]"
+              />
+            )}
+          </Reveal>
+        </div>
         <Reveal>
-          <h1 className="text-3xl md:text-5xl font-semibold">
-            Building Scalable MVPs and AI Solutions That Accelerate Your Vision
-          </h1>
-        </Reveal>
-        <Reveal>
-          <p className="text-xl md:text-2xl font-normal">
-            From concept to launch, we provide transparent, end-to-end
-            development designed to deliver measurable results.
+          <p className="text-md text-white md:text-xl font-medium px-4 max-w-2xl text-center">
+            {description}
           </p>
         </Reveal>
+        <div className="flex flex-col gap-4 absolute bottom-20 ">
+          <h3 className="text-white  px-4 text-[18px] text-center font-semibold">
+            Our solutions are recognized by
+          </h3>
+          <div className="relative w-full overflow-x-hidden">
+          <InfiniteMovingText
+          className="w-screen"
+            items={[
+              "Google",
+              "Obvio",
+              "lunedata",
+              "Innovit",
+              "Teggior",
+              "Cannar",
+              "Google",
+              "Obvio",
+              "lunedata",
+              "Innovit",
+              "Teggior",
+              "Cannar",
+              "Google",
+              "Obvio",
+              "lunedata",
+              "Innovit",
+              "Teggior",
+              "Cannar",
+            ]}
+            speed="fast"
+            />
+            </div>
+        </div>
       </div>
-    </section>
+    </WavyBackground>
   );
 };
 
 export default HeroSection;
+// F37036

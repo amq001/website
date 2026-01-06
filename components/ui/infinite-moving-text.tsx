@@ -44,12 +44,12 @@ export const InfiniteMovingText = ({
       if (direction === "left") {
         containerRef.current.style.setProperty(
           "--animation-direction",
-          "forwards",
+          "forwards"
         );
       } else {
         containerRef.current.style.setProperty(
           "--animation-direction",
-          "reverse",
+          "reverse"
         );
       }
     }
@@ -70,7 +70,7 @@ export const InfiniteMovingText = ({
       ref={containerRef}
       className={cn(
         "scroller relative z-20 max-w-7xl overflow-hidden [mask-image:linear-gradient(to_right,transparent,white_20%,white_80%,transparent)]",
-        className,
+        className
       )}
     >
       <ul
@@ -78,35 +78,16 @@ export const InfiniteMovingText = ({
         className={cn(
           "flex max-w-screen shrink-0 flex-nowrap gap-4",
           start && "animate-scroll",
-          pauseOnHover && "hover:[animation-play-state:paused]",
+          pauseOnHover && "hover:[animation-play-state:paused]"
         )}
       >
         {items.map((item, idx) => (
           <li
+            key={idx}
             className="relative w-[100px] max-w-full shrink-0 rounded-2xl px-8 md:w-[150px] flex items-center justify-center"
-            key={item}
           >
             <blockquote>
-                <h2 className="text-white font-semibold">
-                    {item}
-                </h2>
-              {/* <div
-                aria-hidden="true"
-                className="user-select-none pointer-events-none absolute -top-0.5 -left-0.5 -z-1 h-[calc(100%_+_4px)] w-[calc(100%_+_4px)]"
-              ></div> */}
-              {/* <span className="relative z-20 text-sm leading-[1.6] font-normal text-gray-100">
-                {item.quote}
-              </span>
-              <div className="relative z-20 mt-6 flex flex-row items-center">
-                <span className="flex flex-col gap-1">
-                  <span className="text-sm leading-[1.6] font-normal text-gray-400">
-                    {item.name}
-                  </span>
-                  <span className="text-sm leading-[1.6] font-normal dark:text-gray-400">
-                    {item.title}
-                  </span>
-                </span>
-              </div> */}
+              <h2 className="text-white font-semibold">{item}</h2>
             </blockquote>
           </li>
         ))}

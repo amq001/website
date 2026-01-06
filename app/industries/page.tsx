@@ -1,14 +1,15 @@
 import ContactUsSection from "@/components/ContactUsSection";
 import Footer from "@/components/Footer";
-import HeroSection3 from "@/components/HeroSection3";
-import HorizontalScroll from "@/components/HorizontalScroll";
-import { InfiniteMovingCardsDemo } from "@/components/InfiniteMovingCardsDemo";
+import HeroSection from "@/components/HeroSection";
+// import HeroSection3 from "@/components/HeroSection";
+// import HorizontalScroll from "@/components/HorizontalScroll";
+import { ReviewsSection } from "@/components/ReviewsSection";
 import SectionComponent from "@/components/SectionComponent";
 
 const page = () => {
   return (
     <div className="">
-      <HeroSection3 heading="Industries We Empower" description="" />
+      <HeroSection heading="Industries We Empower" description="" />
       <div>
         {data.map((item, index) => (
           <SectionComponent
@@ -20,7 +21,7 @@ const page = () => {
           />
         ))}
       </div>
-      <InfiniteMovingCardsDemo />
+      <ReviewsSection />
       <ContactUsSection />
       <Footer />
     </div>

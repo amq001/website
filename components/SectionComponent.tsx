@@ -21,22 +21,22 @@ const SectionComponent = ({
 }: Props) => {
   return (
     <div className={"bg-black sticky top-0"}>
-      <Container
-        className={`flex h-screen gap-4 items-center justify-between ${
-          index % 2 === 0 ? "flex-row" : "flex-row-reverse"
+      <div
+        className={`flex flex-col-reverse min-h-screen max-w-screen px-4 md:max-w-7xl mx-auto gap-4 items-center justify-center md:justify-between ${
+          index % 2 === 0 ? "md:flex-row" : "md:flex-row-reverse"
         }`}
       >
-        <div className="flex flex-col gap-2 items-center w-1/2 px-4">
+        <div className="flex flex-col gap-2 items-center w-full md:w-1/2">
           <Reveal width="full-width">
             <h1
-              className={`text-3xl font-semibold text-white`}
+              className={`text-xl md:text-3xl text-center font-semibold text-white`}
             >
               {heading}
             </h1>
           </Reveal>
           <Reveal width="full-width">
             <p
-              className={"text-xl font-medium text-white"}
+              className={"text-sm md:text-xl font-medium text-white"}
             >
               {description}
             </p>
@@ -47,16 +47,16 @@ const SectionComponent = ({
             </Link>
           )}
         </div>
-        <div className=" w-1/2">
-          <Reveal width="full-width">
+        <div className="w-full mt-4 md:w-1/2 relative">
+          <Reveal width="full-width relative">
             <Image
               src={One}
-              className="rounded-xl h-[calc(100vh-100px)]"
+              className="relative rounded-xl h-[100%]"
               alt="Section Image"
             />
           </Reveal>
         </div>
-      </Container>
+      </div>
       {/* <div className=''></div> */}
     </div>
   );

@@ -13,7 +13,7 @@ import logisticsImage from "../public/images/logistics.png";
 import qaImage from "../public/images/png/qaWhite-removebg-preview.png";
 // import qaImage from "../public/images/qaa.png";
 import supportImage from "../public/images//png/supportWhite-removebg-preview.png";
-import { desc } from "motion/react-client";
+import { desc, image } from "motion/react-client";
 import { features } from "process";
 // import supportImage from "../public/images/supportt.png";
 
@@ -32,11 +32,20 @@ export const projects = [
     tagline: `Sympos AI transforms decision-making by letting multiple AI minds debate, challenge bias, and
     deliver balanced, high-confidence insights`,
     src: "/images/symposImg1.png",
-    description1: `Sympos AI is a next generation AI debate platform built to reduce bias and strengthen decision making by orchestrating structured discussions between multiple large language models. Instead of relying on a single AI response, Sympos AI brings together diverse AI systems each operating under a distinct expert persona to analyze problems from multiple angles.`,
-    description2: `By simulating debates between Visionary, Strategist, Analyst, Ethicist, and Contrarian personas, the platform uncovers hidden assumptions, ethical concerns, strategic risks, and data driven insights that are often missed by standalone models. The result is a more transparent, balanced, and well reasoned outcome.`,
-    description3: `Sympos AI delivers clear debate summaries, final resolutions, and conflict analyses, making it an ideal solution for research, strategy, policy evaluation, and high impact decision making where accuracy and fairness matter most.`,
-    image1: "SymposAi",
-    image2: "SymposAi",
+    details: [
+      {
+        image: "/images/symposImg1.png",
+        description: `Sympos AI is a next generation AI debate platform built to reduce bias and strengthen decision making by orchestrating structured discussions between multiple large language models. Instead of relying on a single AI response, Sympos AI brings together diverse AI systems each operating under a distinct expert persona to analyze problems from multiple angles.`,
+      },
+      {
+        image: "/images/symposImg1.png",
+        description: `By simulating debates between Visionary, Strategist, Analyst, Ethicist, and Contrarian personas, the platform uncovers hidden assumptions, ethical concerns, strategic risks, and data driven insights that are often missed by standalone models. The result is a more transparent, balanced, and well reasoned outcome.`,
+      },
+      {
+        image: "/images/symposImg1.png",
+        description: `Sympos AI delivers clear debate summaries, final resolutions, and conflict analyses, making it an ideal solution for research, strategy, policy evaluation, and high impact decision making where accuracy and fairness matter most.`,
+      },
+    ],
     slug: "SymposAi",
     features: [
       "Multi-LLM integration using models like ChatGPT, Claude, Gemini, Grok, and DeepSeek",
@@ -52,11 +61,20 @@ export const projects = [
     title: "Razacar",
     tagline: `Razacar is an AI-powered, community driven carpooling platform that enables secure, affordable, and eco-friendly daily commuting for organizations.`,
     src: "/images/razacar1.png",
-    description1: `Razacar is an AI-powered, organization-focused ride booking and carpooling platform designed to transform daily commuting into a smarter, more sustainable experience. Built specifically for companies and institutions, the platform enables employees within the same organization to share rides safely, efficiently, and conveniently.`,
-    description2: `Using intelligent matching algorithms, Razacar analyzes routes, schedules, and user preferences to connect commuters with optimal carpool partners. This maximizes vehicle utilization, reduces traffic congestion, and significantly lowers commuting costs. Access is restricted to verified members of the same organization, ensuring privacy, trust, and a secure commuting environment.`,
-    description3: `By reducing the number of vehicles on the road and encouraging shared transportation, Razacar helps organizations lower their carbon footprint while fostering a strong sense of community among employees. With a focus on efficiency, sustainability, and user experience, Razacar delivers a modern, AI driven solution for greener and more cost effective commuting.`,
-    image1: "Razacar",
-    image2: "Razacar",
+    details: [
+      {
+        image: "/images/symposImg1.png",
+        description: `Razacar is an AI-powered, organization-focused ride booking and carpooling platform designed to transform daily commuting into a smarter, more sustainable experience. Built specifically for companies and institutions, the platform enables employees within the same organization to share rides safely, efficiently, and conveniently.`,
+      },
+      {
+        image: "/images/symposImg1.png",
+        description: `Using intelligent matching algorithms, Razacar analyzes routes, schedules, and user preferences to connect commuters with optimal carpool partners. This maximizes vehicle utilization, reduces traffic congestion, and significantly lowers commuting costs. Access is restricted to verified members of the same organization, ensuring privacy, trust, and a secure commuting environment.`,
+      },
+      {
+        image: "/images/symposImg1.png",
+        description: `By reducing the number of vehicles on the road and encouraging shared transportation, Razacar helps organizations lower their carbon footprint while fostering a strong sense of community among employees. With a focus on efficiency, sustainability, and user experience, Razacar delivers a modern, AI driven solution for greener and more cost effective commuting.`,
+      },
+    ],
     slug: "Razacar",
     features: [
       "AI-Powered Ride Matching: Intelligently matches commuters based on routes, schedules, and preferences",
@@ -72,11 +90,20 @@ export const projects = [
     title: "DivAuctions",
     tagline: `DivAuctions is an AI-powered, all-in-one auction and e-commerce platform designed to enable smarter, faster, and more flexible online selling`,
     src: "/images/divauction.png",
-    description1: `DivAuctions is a modern, AI-powered auction and e-commerce solution built to help businesses launch, manage, and scale intelligent online marketplaces with confidence. The platform seamlessly supports both traditional bidding-based auctions and instant Buy Now listings, allowing sellers to adapt their sales strategy to different products and audiences.`,
-    description2: `By leveraging AI-driven insights and automation, DivAuctions enhances decision-making, streamlines operations, and improves the overall user experience. Core processes such as automated invoice generation, secure online payments, and customer management are optimized to reduce manual effort and increase efficiency.`,
-    description3: `Designed with flexibility and scalability at its core, DivAuctions features a highly customizable architecture that adapts to unique business models, workflows, and branding needs from niche auction platforms to large-scale e-commerce ecosystems. With a strong focus on performance, security, and intelligent automation, DivAuctions empowers businesses to stay competitive in today’s fast-evolving digital marketplace.`,
-    image1: "DivAuctions",
-    image2: "DivAuctions",
+    details: [
+      {
+        image: "/images/symposImg1.png",
+        description: `DivAuctions is a modern, AI-powered auction and e-commerce solution built to help businesses launch, manage, and scale intelligent online marketplaces with confidence. The platform seamlessly supports both traditional bidding-based auctions and instant Buy Now listings, allowing sellers to adapt their sales strategy to different products and audiences.`,
+      },
+      {
+        image: "/images/symposImg1.png",
+        description: `By leveraging AI-driven insights and automation, DivAuctions enhances decision-making, streamlines operations, and improves the overall user experience. Core processes such as automated invoice generation, secure online payments, and customer management are optimized to reduce manual effort and increase efficiency.`,
+      },
+      {
+        image: "/images/symposImg1.png",
+        description: `Designed with flexibility and scalability at its core, DivAuctions features a highly customizable architecture that adapts to unique business models, workflows, and branding needs from niche auction platforms to large-scale e-commerce ecosystems. With a strong focus on performance, security, and intelligent automation, DivAuctions empowers businesses to stay competitive in today’s fast-evolving digital marketplace.`,
+      },
+    ],
     slug: "DivAuctions",
     features: [
       "AI-powered insights to optimize listings, pricing, and sales performance",
@@ -93,11 +120,20 @@ export const projects = [
     title: "Molahub",
     tagline: `Small acts, big smiles MolaHub makes meaningful gift giving effortless by connecting people through personalized experiences at their favorite local brands`,
     src: "/images/molahub2.png",
-    description1: `MolaHub is a gift-giving platform that transforms how people share moments that matter. Instead of scrambling to find the perfect gift or coordinating group outings, users can send personalized experiences like a coffee, a meal, or a treat to friends, family, or entire groups with just a few taps. Through an intuitive mobile app, gifts are delivered with personal messages and redeemed seamlessly using QR codes.`,
-    description2: `The platform connects three communities in one smooth ecosystem. Customers discover and send gifts through the app, while local businesses join as Brand Admins to showcase their offerings and welcome new customers through gift redemptions. Super Admins ensure platform quality by reviewing and approving each brand, maintaining high standards so every shared experience feels special and trustworthy.`,
-    description3: `What makes MolaHub truly stand out is its simplicity and heart. Thoughtful onboarding personalizes the experience, group gifting makes sharing easy, and real-time notifications keep everything effortless from sending to redemption. For businesses, each gift drives foot traffic and brand discovery; for users, MolaHub removes friction from gifting while preserving its personal touch proving that technology can strengthen human connection, not complicate it.`,
-    image1: "Molahub",
-    image2: "Molahub",
+    details: [
+      {
+        image: "/images/symposImg1.png",
+        description: `MolaHub is a gift-giving platform that transforms how people share moments that matter. Instead of scrambling to find the perfect gift or coordinating group outings, users can send personalized experiences like a coffee, a meal, or a treat to friends, family, or entire groups with just a few taps. Through an intuitive mobile app, gifts are delivered with personal messages and redeemed seamlessly using QR codes.`,
+      },
+      {
+        image: "/images/symposImg1.png",
+        description: `The platform connects three communities in one smooth ecosystem. Customers discover and send gifts through the app, while local businesses join as Brand Admins to showcase their offerings and welcome new customers through gift redemptions. Super Admins ensure platform quality by reviewing and approving each brand, maintaining high standards so every shared experience feels special and trustworthy.`,
+      },
+      {
+        image: "/images/symposImg1.png",
+        description: `What makes MolaHub truly stand out is its simplicity and heart. Thoughtful onboarding personalizes the experience, group gifting makes sharing easy, and real-time notifications keep everything effortless from sending to redemption. For businesses, each gift drives foot traffic and brand discovery; for users, MolaHub removes friction from gifting while preserving its personal touch proving that technology can strengthen human connection, not complicate it.`,
+      },
+    ],
     slug: "Molahub",
     features: [
       "Effortless Gift Sending: Customers send personalized gifts (coffee, meals, experiences) to individuals or groups with just a few taps, complete with custom messages and scheduled meetups",
@@ -112,13 +148,22 @@ export const projects = [
   {
     title: "KarCab",
     tagline: `KarCab is a flexible on demand logistics and ride booking platform that seamlessly
-connects customers, service providers, and administrators in real time`,
+    connects customers, service providers, and administrators in real time`,
     src: "/images/karcab.png",
-    description1: `KarCab is an on-demand mobility and logistics platform designed to support a wide range of transportation and delivery services within a single, unified ecosystem. Through a simple and intuitive mobile app, customers can quickly request services such as bike rides, parcel deliveries, carpooling, or intercity travel. Once a request is made, nearby service providers receive it in real time and can choose to accept, enabling fast and efficient service matching.`,
-    description2: `After acceptance, KarCab securely connects the customer and service provider, allowing trips or deliveries to proceed smoothly with live tracking and real-time status updates. This seamless interaction improves response times, enhances transparency, and creates a reliable experience for both users and providers. Every step from request to completion is designed to be clear, efficient, and easy to follow.`,
-    description3: `Behind the scenes, KarCab offers a powerful admin panel that gives operators full visibility and control over platform activity. Administrators can monitor trips, manage users and providers, and enforce safety or quality measures when needed. Built with flexibility at its core, KarCab adapts easily to ride-hailing, last-mile delivery, shared mobility, or long-distance travel, making it a scalable and reliable solution for modern transportation and logistics businesses.`,
-    image1: "KarCab",
-    image2: "KarCab",
+    details: [
+      {
+        image: "/images/symposImg1.png",
+        description: `KarCab is an on-demand mobility and logistics platform designed to support a wide range of transportation and delivery services within a single, unified ecosystem. Through a simple and intuitive mobile app, customers can quickly request services such as bike rides, parcel deliveries, carpooling, or intercity travel. Once a request is made, nearby service providers receive it in real time and can choose to accept, enabling fast and efficient service matching.`,
+      },
+      {
+        image: "/images/symposImg1.png",
+        description: `After acceptance, KarCab securely connects the customer and service provider, allowing trips or deliveries to proceed smoothly with live tracking and real-time status updates. This seamless interaction improves response times, enhances transparency, and creates a reliable experience for both users and providers. Every step from request to completion is designed to be clear, efficient, and easy to follow.`,
+      },
+      {
+        image: "/images/symposImg1.png",
+        description: `Behind the scenes, KarCab offers a powerful admin panel that gives operators full visibility and control over platform activity. Administrators can monitor trips, manage users and providers, and enforce safety or quality measures when needed. Built with flexibility at its core, KarCab adapts easily to ride-hailing, last-mile delivery, shared mobility, or long-distance travel, making it a scalable and reliable solution for modern transportation and logistics businesses.`,
+      },
+    ],
     slug: "KarCab",
     features: [
       "On demand service booking for rides, deliveries, and logistics",
@@ -134,13 +179,22 @@ connects customers, service providers, and administrators in real time`,
     title: "Dawam ",
     tagline: `Dawam is an integrated healthcare platform connecting patients with trusted clinics, pharmacies, and diagnostic services seamlessly and securely`,
     src: "/images/dawam.png",
-    description1: `Dawam Healthcare is a comprehensive digital healthcare platform designed to simplify how patients access quality medical services. It brings together specialized consultant clinics, temperature controlled pharmacies, and internationally standardized diagnostic laboratories into one unified and easy to use experience, making healthcare more accessible and organized for patients.`,
-    description2: `Built with a patient first approach, Dawam allows users to quickly find doctors by specialization, book appointments through interactive forms, and securely submit their information. The platform is fully responsive across all devices, ensuring patients can access services anytime and anywhere without friction.`,
-    description3: `To support trust, security, and growth, Dawam Healthcare integrates Google reCAPTCHA to prevent spam and protect user interactions. It also includes Google Business setup to strengthen both online visibility and physical presence, helping patients confidently connect with verified healthcare providers through a reliable and modern digital platform.`,
-    image1: "Dawam",
-    image2: "Dawam",
+    details: [
+      {
+        image: "/images/symposImg1.png",
+        description: `Dawam Healthcare is a comprehensive digital healthcare platform designed to simplify how patients access quality medical services. It brings together specialized consultant clinics, temperature controlled pharmacies, and internationally standardized diagnostic laboratories into one unified and easy to use experience, making healthcare more accessible and organized for patients.`,
+      },
+      {
+        image: "/images/symposImg1.png",
+        description: `Built with a patient first approach, Dawam allows users to quickly find doctors by specialization, book appointments through interactive forms, and securely submit their information. The platform is fully responsive across all devices, ensuring patients can access services anytime and anywhere without friction.`,
+      },
+      {
+        image: "/images/symposImg1.png",
+        description: `To support trust, security, and growth, Dawam Healthcare integrates Google reCAPTCHA to prevent spam and protect user interactions. It also includes Google Business setup to strengthen both online visibility and physical presence, helping patients confidently connect with verified healthcare providers through a reliable and modern digital platform.`,
+      },
+    ],
     slug: "Dawam",
-    features: [      
+    features: [
       "Integrated platform for clinics, pharmacies, and diagnostic labs",
       "Smart doctor filtering based on specialization for easy discovery",
       "Interactive appointment booking forms for smooth patient onboarding",
@@ -154,11 +208,20 @@ connects customers, service providers, and administrators in real time`,
     title: "Gami",
     tagline: `We optimized GAMI’s backend and application flow to cut server costs by over 80% without compromising gameplay or blockchain integrity.`,
     src: "/images/gami.png",
-    description1: `For GAMI, a blockchain-powered multiplayer mobile game, our role was to significantly reduce operational costs while maintaining performance, scalability, and security. The game’s infrastructure was generating extremely high daily server expenses due to inefficient resource usage and unoptimized application logic.`,
-    description2: `We conducted a deep analysis of backend services, API calls, data synchronization, and real-time interactions. By optimizing code execution, reducing redundant requests, improving caching strategies, and streamlining blockchain interactions, we dramatically lowered server load.`,
-    description3: `As a result, daily infrastructure costs dropped from €600 per day to under €100 per day, while preserving smooth gameplay, real-time multiplayer interactions, and transparent in-game transactions. This optimization enabled the client to scale sustainably and reinvest resources into product growth instead of infrastructure overhead.`,
-    image1: "gami",
-    image2: "gami",
+    details: [
+      {
+        image: "/images/symposImg1.png",
+        description: `For GAMI, a blockchain-powered multiplayer mobile game, our role was to significantly reduce operational costs while maintaining performance, scalability, and security. The game’s infrastructure was generating extremely high daily server expenses due to inefficient resource usage and unoptimized application logic.`,
+      },
+      {
+        image: "/images/symposImg1.png",
+        description: `We conducted a deep analysis of backend services, API calls, data synchronization, and real-time interactions. By optimizing code execution, reducing redundant requests, improving caching strategies, and streamlining blockchain interactions, we dramatically lowered server load.`,
+      },
+      {
+        image: "/images/symposImg1.png",
+        description: `As a result, daily infrastructure costs dropped from €600 per day to under €100 per day, while preserving smooth gameplay, real-time multiplayer interactions, and transparent in-game transactions. This optimization enabled the client to scale sustainably and reinvest resources into product growth instead of infrastructure overhead.`,
+      },
+    ],
     slug: "gami",
     features: [
       "Reduced daily server costs by over 80% through backend and code optimization",
@@ -174,11 +237,20 @@ connects customers, service providers, and administrators in real time`,
     title: "Carbyne",
     tagline: `Carbyne secures your crypto wallet by turning sensitive keys into encrypted, shareable QR codes safe, simple, and private`,
     src: "/images/carbyne.png",
-    description1: `Carbyne is a secure crypto asset protection platform designed to help users safely store and share private keys and recovery phrases without exposing sensitive information. Wallet credentials are encrypted using a user-defined password and transformed into a protected QR code, allowing users to store or share access with confidence.`,
-    description2: `Built with a strong focus on privacy and usability, Carbyne ensures that only the intended recipient can decrypt the encrypted data. By removing the need for plain-text storage, screenshots, or insecure messaging, the platform significantly reduces the risk of accidental exposure or theft.`,
-    description3: `Balancing enterprise-grade security with a clean, user-friendly experience, Carbyne makes crypto key management safer and more accessible for everyday users. It empowers individuals to protect their digital assets while maintaining full control, privacy, and peace of mind.`,
-    image1: "carbyne",
-    image2: "carbyne",
+    details: [
+      {
+        image: "/images/symposImg1.png",
+        description: `Carbyne is a secure crypto asset protection platform designed to help users safely store and share private keys and recovery phrases without exposing sensitive information. Wallet credentials are encrypted using a user-defined password and transformed into a protected QR code, allowing users to store or share access with confidence.`,
+      },
+      {
+        image: "/images/symposImg1.png",
+        description: `Built with a strong focus on privacy and usability, Carbyne ensures that only the intended recipient can decrypt the encrypted data. By removing the need for plain-text storage, screenshots, or insecure messaging, the platform significantly reduces the risk of accidental exposure or theft.`,
+      },
+      {
+        image: "/images/symposImg1.png",
+        description: `Balancing enterprise-grade security with a clean, user-friendly experience, Carbyne makes crypto key management safer and more accessible for everyday users. It empowers individuals to protect their digital assets while maintaining full control, privacy, and peace of mind.`,
+      },
+    ],
     slug: "carbyne",
     features: [
       "End to end encryption of private keys and seed phrases",
@@ -194,11 +266,20 @@ connects customers, service providers, and administrators in real time`,
     title: "Virtual CEO",
     tagline: `Your complete marketing, sales, and tech tea on subscription, without the hiring hassle`,
     src: "/images/virtualCeo.png",
-    description1: `VirtualCEO is a subscription based platform designed to help business owners and entrepreneurs scale faster by providing instant access to fully managed marketing, sales, and technology teams. Instead of spending months recruiting, onboarding, and managing talent, businesses gain experienced professionals who work as a seamless extension of their organization.`,
-    description2: `With flexible plans and predictable costs, VirtualCEO removes the complexity and overhead of traditional hiring. Companies avoid HR headaches while benefiting from structured processes, proven expertise, and consistent execution across critical business functions.`,
-    description3: `Whether supporting a startup, a growing company, or an established brand, VirtualCEO delivers the people, systems, and performance needed to drive growth with confidence. By handling execution end to end, the platform allows leaders to stay focused on strategy, innovation, and long-term success.`,
-    image1: "VirtualCEO",
-    image2: "VirtualCEO",
+    details: [
+      {
+        image: "/images/symposImg1.png",
+        description: `VirtualCEO is a subscription based platform designed to help business owners and entrepreneurs scale faster by providing instant access to fully managed marketing, sales, and technology teams. Instead of spending months recruiting, onboarding, and managing talent, businesses gain experienced professionals who work as a seamless extension of their organization.`,
+      },
+      {
+        image: "/images/symposImg1.png",
+        description: `With flexible plans and predictable costs, VirtualCEO removes the complexity and overhead of traditional hiring. Companies avoid HR headaches while benefiting from structured processes, proven expertise, and consistent execution across critical business functions.`,
+      },
+      {
+        image: "/images/symposImg1.png",
+        description: `Whether supporting a startup, a growing company, or an established brand, VirtualCEO delivers the people, systems, and performance needed to drive growth with confidence. By handling execution end to end, the platform allows leaders to stay focused on strategy, innovation, and long-term success.`,
+      },
+    ],
     slug: "VirtualCEO",
     features: [
       "Subscription-based access to marketing, sales, and tech professionals",

@@ -53,7 +53,9 @@ const Navbar = () => {
         className={`flex p-4 rounded-2xl backdrop-filter backdrop-blur-md bg-black/50 justify-between items-center w-full`}
       >
         <div className="position-relative w-24 h-6 md:w-32 md:h-8">
-          <Image src={footerLogo} alt="logo" />
+          <Link href="/">
+            <Image src={footerLogo} alt="logo" />
+          </Link>
         </div>
         <div className="hidden md:flex space-x-8 items-center">
           {navLinks.map((link) => (

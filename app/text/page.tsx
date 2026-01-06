@@ -1,4 +1,4 @@
-import { InfiniteMovingCardsDemo } from "@/components/InfiniteMovingCardsDemo";
+import { InfiniteMovingCardsDemo } from "@/components/ReviewsSection";
 import Marquee from "@/components/Marquee";
 import { Inika } from "next/font/google";
 import React from "react";
