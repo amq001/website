@@ -35,7 +35,9 @@ export function ProcessSection({ heading, description, cards }: Props) {
                   key={index}
                   className="w-full xl:h-[80vh] xl:py-20 xl:px-16 flex items-center justify-center"
                 >
-                  <div className="xl:hover:scale-102 rounded-sm transition-transform duration-300 hover:shadow-[0_0_10px_#fff,0_0_10px_#1900d0,0_0_15px_#1900d0] p-4 flex flex-col gap-4 items-center justify-center h-[calc(100%-50px)] my-2 w-[calc(100%-20px)] bg-[linear-gradient(90deg,#000_20%,#1900d0_200%)] xl:rounded-3xl">
+                  <div className="xl:hover:scale-102 rounded-sm xl:rounded-3xl overflow-hidden transition-transform duration-300 hover:shadow-[0_0_10px_#fff,0_0_10px_#1900d0,0_0_15px_#1900d0] p-4 flex flex-col gap-4 items-center justify-center h-[calc(100%-50px)] my-2 w-[calc(100%-20px)] bg-black relative">
+                    <div className="opacity-40 bg-[url('/images/cardBg1.png')] bg-cover bg-center bg-no-repeat h-full w-full absolute">
+                    </div>
                     {card.image && (
                       <Reveal>
                         <Image
