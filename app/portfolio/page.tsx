@@ -33,16 +33,16 @@ const page = () => {
 
 export default page;
 
-const data = Array(6)
-  .fill()
-  .map((_, index) => ({
-    heading: "HELLO",
-    description: `Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cumque
-          adipisci, corporis mollitia labore ducimus fuga consectetur id, magni,
-          quibusdam magnam nesciunt soluta deleniti minima laudantium rem harum
-          voluptatem corrupti fugit sed! Accusantium maiores quaerat quo, culpa
-          dolorem sit repellat autem iure voluptatibus. Autem sed saepe delectus
-          dolore vero iste distinctio.`,
-    image: "",
-    slug: "example-slug",
-  }));
+// const data = Array(6)
+//   .fill("")
+//   .map((_, index) => ({
+//     heading: "HELLO",
+//     description: `Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cumque
+//           adipisci, corporis mollitia labore ducimus fuga consectetur id, magni,
+//           quibusdam magnam nesciunt soluta deleniti minima laudantium rem harum
+//           voluptatem corrupti fugit sed! Accusantium maiores quaerat quo, culpa
+//           dolorem sit repellat autem iure voluptatibus. Autem sed saepe delectus
+//           dolore vero iste distinctio.`,
+//     image: "",
+//     slug: "example-slug",
+//   }));

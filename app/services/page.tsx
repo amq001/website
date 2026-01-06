@@ -8,7 +8,7 @@ const page = () => {
   return (
     <div className="smooth-scroll">
       <HeroSection3
-        heading={"Our Services"}
+        heading={"Services We Offer"}
         description="Explore our diverse range of services, where we deliver innovative, customized solutions tailored to the unique needs of each client.Whether it's advanced technology implementations or strategic insights, our offerings reflect a commitment to seamless integration and exceptional performance. "
       />
       <div>

@@ -12,8 +12,10 @@ const AnimatedParagraph = ({ paragraph }: { paragraph: string }) => {
 
   const words = paragraph.split(" ");
 
+  // whyUsBgImg
+
   return (
-    <div className=" min-h-screen max-w-screen flex flex-col items-center justify-center gap-4">
+    <div className=" min-h-screen max-w-screen flex flex-col items-center justify-center gap-4 bg-[url('/images/whyUsBgImg.png')] bg-cover bg-center bg-no-repeat">
       <HeadingComponent heading="Why Us?" variant="secondary" />
       <div className="max-w-screen px-2 sm:px-8 lg:px-12 md:max-w-7xl mx-auto">
         <motion.p

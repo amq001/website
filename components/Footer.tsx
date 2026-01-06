@@ -1,5 +1,6 @@
 import Image from "next/image";
 import footerLogo from "../public/footer-logo.svg";
+import Link from "next/link";
 
 const Footer = () => {
   return (
@@ -10,17 +11,22 @@ const Footer = () => {
       <div className="relative h-[calc(100vh+600px)] -top-[100vh]">
         <div className="max-w-7xl mx-auto sm:px-6 lg:px-8 sticky top-[calc(100vh-600px)] h-[600px] flex flex-col md:flex-row gap-8 items-center md:items-center justify-center md:justify-between">
           <div>
-          <Image src={footerLogo} alt="Logo" className="w-48" />
+            <Image src={footerLogo} alt="Logo" className="w-48" />
           </div>
           <div className="md:grid md:grid-cols-3 md:gap-auto max-w-3xl flex flex-col gap-8">
-            <div className="flex flex-col items-center justify-center md:items-start gap-2">
-              <h1 className="text-xl font-semibold text-white">Company</h1>
-              <div className="flex flex-col gap-1 items-baseline-last">
-                <h1 className="text-lg text-white text-center">Footer</h1>
-                <h1 className="text-lg text-white">Footer</h1>
+            {footerData.map((section, index) => (
+              <div key={index} className="flex flex-col items-center justify-center md:items-start gap-2">
+                <h1 className="text-xl font-semibold text-white">{section.title}</h1>
+                <div className="flex flex-col gap-1 items-baseline-last">
+                  {section.links.map((link, linkIndex) => (
+                    <Link key={linkIndex} href={link.src}>
+                    <h1 className="text-lg text-white">{link.title}</h1>
+                    </Link>
+                  ))}
+                </div>
               </div>
-            </div>
-            <div className="flex flex-col items-center justify-center md:items-start gap-2">
+            ))}
+            {/* <div className="flex flex-col items-center justify-center md:items-start gap-2">
               <h1 className="text-xl font-semibold text-white">Reach us out</h1>
               <div className="flex flex-col gap-1">
                 <h1 className="text-lg text-white">Footer</h1>
@@ -28,12 +34,14 @@ const Footer = () => {
               </div>
             </div>
             <div className="flex flex-col items-center justify-center md:items-start gap-2">
-              <h1 className="text-xl font-semibold text-white">Follow us on Social Media</h1>
+              <h1 className="text-xl font-semibold text-white">
+                Follow us on Social Media
+              </h1>
               <div className="flex flex-col gap-1">
                 <h1 className="text-lg text-white">Footer</h1>
                 <h1 className="text-lg text-white">Footer</h1>
               </div>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>
@@ -42,3 +50,32 @@ const Footer = () => {
 };
 
 export default Footer;
+
+const footerData = [
+  {
+    title: "Company",
+    links: [
+      { title: "Home", src: "/" },
+      { title: "Portfolio", src: "/portfolio" },
+      { title: "Services", src: "/services" },
+      { title: "Industries", src: "/industries" },
+    ],
+  },
+  {
+    title: "Reach us out",
+    links: [
+      { title: "Email", src: "/" },
+      { title: "Phone Number", src: "/portfolio" },
+      { title: "Address", src: "/services" },
+    ],
+  },
+  {
+    title: "Follow us on Social Media",
+    links: [
+      { title: "Linkedin", src: "/portfolio" },
+      { title: "Facebook", src: "/industries" },
+      { title: "Instagram", src: "/" },
+      { title: "X", src: "/services" },
+    ],
+  },
+];

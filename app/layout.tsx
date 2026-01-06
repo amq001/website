@@ -14,7 +14,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${roboto.className} bg-black`}>
+      <body className={`${roboto.className} bg-black`} suppressHydrationWarning>
         <Navbar />
         {children}
       </body>

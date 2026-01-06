@@ -48,7 +48,7 @@ const SectionComponent = ({
           )}
         </div>
         <div className="w-full mt-4 md:w-1/2 relative">
-          <Reveal width="full-width relative">
+          <Reveal width="full-width">
             <Image
               src={One}
               className="relative rounded-xl h-[100%]"
