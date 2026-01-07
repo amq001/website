@@ -3,18 +3,22 @@ import { projects } from "../constants/dummy";
 import Button from "./Button";
 import HeadingComponent from "./HeadingComponent";
 import StickyCard from "./StickyCard";
-// import {useRouter} from "next/navigation";
 
-const PortfolioSection = () => {
-  // const router = useRouter();
+type Props = {
+  heading: string;
+  portfolio: any[];
+};
+
+const PortfolioSection = ({heading, portfolio}: Props) => {
   return (
-    <section className="min-h-screen flex flex-col gap-12 items-center bg-black pt-28">
+    <section className="min-h-screen flex flex-col gap-12 items-center pt-12 xl:pt-20">
       <HeadingComponent
-        heading="Check Out What We’ve Delivered"
+        heading={heading}
         variant="secondary"
+        textCentered={true}
       />
       <div>
-        {projects.slice(0, 4).map((project, index) => (
+        {portfolio.slice(0, 5).map((project, index) => (
           <StickyCard key={index} {...project} />
         ))}
       </div>

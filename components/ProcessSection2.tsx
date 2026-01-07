@@ -3,8 +3,8 @@ import HorizontalScroll from "./HorizontalScroll";
 import HeadingComponent from "./HeadingComponent";
 
 type Props = {
-  // heading: string;
-  // description?: string;
+  heading?: string;
+  description?: string;
   cards?: {
     title: string;
     description: string;
@@ -12,14 +12,15 @@ type Props = {
   }[];
 };
 
-const ProcessSection2 = ({ cards }: Props) => {
+const ProcessSection2 = ({ heading, description, cards }: Props) => {
   return (
-    <div className="min-h-screen flex flex-col bg-black pt-12">
-      <div className="flex justify-center items-center">
+    <div className="min-h-screen flex flex-col bg-black pt-20">
+      <div className="flex justify-center items-center ">
         <HeadingComponent
-          heading=""
-        //   description="Our Proven Process"
+          heading={heading || "Our Proven Process"}
+          description={description}
           variant="secondary"
+          textCentered={true}
         />
       </div>
       <HorizontalScroll cards={cards} />

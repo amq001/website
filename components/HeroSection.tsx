@@ -1,3 +1,4 @@
+import { ourPartners } from "@/constants/dummy";
 import Reveal from "./Reveal";
 import TextCycleAnimation from "./TextCycleAnimation";
 import { InfiniteMovingText } from "./ui/infinite-moving-text";
@@ -7,7 +8,7 @@ type Prop = {
   heading: string;
   description: string;
   textCycle?: string[];
-  type?: "hero" | "standard";
+  // type?: "hero" | "standard";
 };
 // bg-black [background:radial-gradient(125%_125%_at_50%_10%,#000_40%,#F37036_100%)
 
@@ -15,7 +16,7 @@ const HeroSection = ({
   heading,
   description,
   textCycle,
-  type = "standard",
+  // type = "standard",
 }: Prop) => {
   return (
     <WavyBackground className="max-w-screen overflow-x-hidden">
@@ -47,26 +48,7 @@ const HeroSection = ({
           <div className="relative w-full overflow-x-hidden">
           <InfiniteMovingText
           className="w-screen"
-            items={[
-              "Google",
-              "Obvio",
-              "lunedata",
-              "Innovit",
-              "Teggior",
-              "Cannar",
-              "Google",
-              "Obvio",
-              "lunedata",
-              "Innovit",
-              "Teggior",
-              "Cannar",
-              "Google",
-              "Obvio",
-              "lunedata",
-              "Innovit",
-              "Teggior",
-              "Cannar",
-            ]}
+            items={ourPartners}
             speed="fast"
             />
             </div>

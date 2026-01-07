@@ -58,7 +58,7 @@ const HorizontalScroll = ({ cards }: Props) => {
     <section
       ref={sectionRef}
       // [background:radial-gradient(125%_125%_at_50%_90%,#000_40%,#1900d0_100%)]
-      className="relative h-[610vh] bg-black"
+      className="relative h-[300vh] md:h-[610vh] bg-black"
     >
       <div className="sticky top-0 h-screen overflow-hidden flex items-center">
         <motion.div
@@ -87,9 +87,10 @@ const HorizontalScroll = ({ cards }: Props) => {
               <Reveal key={index}>
                 <div
                   key={index}
-                  className="xl:h-[80vh] xl:py-20 xl:px-16 w-[80vw] md:w-[500px] flex items-center justify-center"
+                  className="h-[60vh] xl:h-[80vh] w-[280px] sm:w-[50vw] xl:w-[500px] px-8 py-8 xl:py-20 xl:px-16 flex items-center justify-center"
                 >
-                  <div className="hover:scale-102 rounded-sm transition-transform shadow-[0_0_10px_#000,0_0_10px_#1900d0,0_0_30px_#1900d0] duration-300 hover:shadow-[0_0_10px_#fff,0_0_20px_#1900d0,0_0_30px_#1900d0] p-4 flex flex-col gap-4 items-center justify-center h-full md:w-[500px] bg-black xl:rounded-3xl">
+                  <div className="hover:scale-102 relative overflow-hidden rounded-sm transition-transform shadow-[0_0_10px_#000,0_0_10px_#fff,0_0_30px_#fff] duration-300 hover:shadow-[0_0_10px_#fff,0_0_20px_#753801,0_0_30px_#753801] p-4 flex flex-col gap-4 items-center justify-center h-full md:w-[500px] bg-black xl:rounded-3xl">
+                    <div className="w-full h-full opacity-100 bg-[url('/images/cardBg2.png')] bg-cover bg-center bg-no-repeat h-full w-full absolute"></div>
                     {/* {card.image && (
                       <Reveal>
                         <Image
@@ -101,12 +102,12 @@ const HorizontalScroll = ({ cards }: Props) => {
                     )} */}
                     <div className="flex flex-col gap-2 items-center justify-center">
                       <Reveal>
-                        <h2 className="text-white text-3xl font-medium text-center">
+                        <h2 className="text-white text-xl md:text-3xl font-medium text-center">
                           {card.title}
                         </h2>
                       </Reveal>
                       <Reveal>
-                        <p className="text-white text-center">
+                        <p className="text-white text-sm md:text-lg text-center">
                           {card.description}
                         </p>
                       </Reveal>

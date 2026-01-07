@@ -1,49 +1,42 @@
-import AnimatedParagraph from "@/components/AnimatedParagraph";
 import ContactUsSection from "@/components/ContactUsSection";
 import Footer from "@/components/Footer";
 import HeroSection from "@/components/HeroSection";
 import PortfolioSection from "@/components/PortfolioSection";
 import { ProcessSection } from "@/components/ProcessSection";
-// import ProcessSection2 from "@/components/ProcessSection2";
 import { ReviewsSection } from "@/components/ReviewsSection";
-import { websiteData } from "@/constants/dummy";
-import HorizontalScroll from "@/components/HorizontalScroll";
+import { homePage } from "@/constants/dummy";
 import ProcessSection2 from "@/components/ProcessSection2";
+import WhyUsSection from "@/components/WhyUsSection";
 
 export default function Home() {
   return (
-    <div className="smooth-scroll">
+    <div className="scroll-smooth">
       <HeroSection
-        heading="Delivering excellence in"
-        description="We partner with you to build intelligent, scalable products focused on results, reliability, and long-term success."
-        type="hero"
-        textCycle={[
-          "AI-Powered Solutions",
-          "Product Strategy & Design",
-          "Deployment & Ongoing Support",
-          "Visual & Brand Experiences",
-          "Technical Advisory Services",
-          "Research & Innovation",
-          "MVP & Rapid Development",
-        ]}
+        heading={homePage.hero.heading}
+        description={homePage.hero.description}
+        textCycle={homePage.hero.changingText}
       />
-      <PortfolioSection />
+      <PortfolioSection heading={homePage.portfolio.heading} portfolio={homePage.portfolio.projects} />
       <ProcessSection
-        heading={websiteData.process.heading}
-        description={websiteData.process.description}
-        cards={websiteData.process.processCards}
+        heading={homePage.process.heading}
+        description={homePage.process.description}
+        cards={homePage.process.processCards}
       />
-      {/* <HorizontalScroll cards={websiteData.process.processCards} /> */}
-      <ProcessSection2 cards={websiteData.services.servicesCards} />
+      {/* <HorizontalScroll cards={homePage.process.processCards} /> */}
+      <ProcessSection2
+        heading={homePage.services.heading}
+        cards={homePage.services.servicesCards}
+      />
       {/* --- Industries Section --- */}
       <ProcessSection
-        heading={websiteData.industries.heading}
-        description={websiteData.industries.description}
-        cards={websiteData.industries.industriesCards}
+        heading={homePage.industries.heading}
+        description={homePage.industries.description}
+        cards={homePage.industries.industriesCards}
       />
       {/* Why Choose Us */}
-      <AnimatedParagraph
-        paragraph={`We believe great products are built on trust, transparency, and close collaboration. Our highly skilled team brings deep technical expertise and industry experience to every project, ensuring solutions are scalable, efficient, and future-ready. We work side by side with you, maintaining clear communication and complete visibility throughout the development journey.`}
+      <WhyUsSection
+        heading={homePage.whyUs.heading}
+        description={homePage.whyUs.description}
       />
       <ReviewsSection />
       <ContactUsSection />

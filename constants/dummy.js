@@ -1,21 +1,31 @@
 import ecommerceImage from "../public/images/ecommerce.png";
 import fintechImage from "../public/images/fintech.png";
 import healthImage from "../public/images/health.png";
-import ideateImage from "../public/images/png/ideateWhite-removebg-preview.png";
-// import ideateImage from "../public/images/ideatee.png";
-import designImage from "../public/images/png/designWhite-removebg-preview.png";
-// import designImage from "../public/images/designn.png";
-import developmentImage from "../public/images/png/developmentWhite-removebg-preview.png";
-// import developmentImage from "../public/images/developmentt.png";
-import liveImage from "../public/images/png/liveWhite-removebg-preview.png";
-// import liveImage from "../public/images/livee.png";
+import ideateImage from "../public/images/ideatee.png";
+import designImage from "../public/images/designn.png";
+import developmentImage from "../public/images/developmentt.png";
+import liveImage from "../public/images/livee.png";
 import logisticsImage from "../public/images/logistics.png";
-import qaImage from "../public/images/png/qaWhite-removebg-preview.png";
-// import qaImage from "../public/images/qaa.png";
-import supportImage from "../public/images//png/supportWhite-removebg-preview.png";
+import qaImage from "../public/images/qaa.png";
+import supportImage from "../public/images/supportt.png";
+import healthcareIndustry from "../public/images/healthcareIndustry.png";
+import ecommerceIndustry from "../public/images/ecommerceIndustry.png";
+import financeIndustry from "../public/images/financeIndustry.png";
+import logisticsIndustry from "../public/images/logisticsIndustry.png";
+import chromeService from "../public/images/chrome.png";
+import fullstackAiService from "../public/images/fullstackAi.png";
+import chatbotService from "../public/images/chatbot.png";
+import aiIntegrationService from "../public/images/AiIntegration.png";
+import aiWorkflowService from "../public/images/AiWorkflow.png";
+import webMobileService from "../public/images/WebMobile.png";
+// import ideateImage from "../public/images/png/ideateWhite-removebg-preview.png";
+// import designImage from "../public/images/png/designWhite-removebg-preview.png";
+// import developmentImage from "../public/images/png/developmentWhite-removebg-preview.png";
+// import liveImage from "../public/images/png/liveWhite-removebg-preview.png";
+// import qaImage from "../public/images/png/qaWhite-removebg-preview.png";
+// import supportImage from "../public/images//png/supportWhite-removebg-preview.png";
 import { desc, image } from "motion/react-client";
 import { features } from "process";
-// import supportImage from "../public/images/supportt.png";
 
 // export type ProjectType = {
 //   title: string;
@@ -293,9 +303,25 @@ export const projects = [
   },
 ];
 
-export const websiteData = {
-  hero: {},
-  portfolio: {},
+export const homePage = {
+  hero: {
+    heading: "Delivering excellence in",
+    description:
+      "We partner with you to build intelligent, scalable products focused on results, reliability, and long-term success.",
+    changingText: [
+      "AI-Powered Solutions",
+      "Product Strategy & Design",
+      "Deployment & Ongoing Support",
+      "Visual & Brand Experiences",
+      "Technical Advisory Services",
+      "Research & Innovation",
+      "MVP & Rapid Development",
+    ],
+  },
+  portfolio: {
+    heading: "Check Out What We’ve Delivered",
+    projects: projects,
+  },
   process: {
     heading: "From Idea to Product",
     description:
@@ -404,4 +430,128 @@ export const websiteData = {
       },
     ],
   },
+  whyUs: {
+    heading: "Why Choose DivDash?",
+    description: `We believe great products are built on trust, transparency, and close collaboration. Our highly skilled team brings deep technical expertise and industry experience to every project, ensuring solutions are scalable, efficient, and future-ready. We work side by side with you, maintaining clear communication and complete visibility throughout the development journey.`,
+  },
 };
+
+export const servicesPage = {
+  hero: {
+    heading: "Services We Offer",
+    description:
+      "Innovative, customized solutions combining advanced technology and strategic insight for exceptional performance.",
+  },
+  services: [
+    {
+      title: "Full-Stack AI Solutions",
+      description:
+        "We deliver end-to-end full-stack solutions infused with AI, covering frontend, backend, and intelligent systems to build scalable, high-performance products ready for real-world deployment.",
+      image: fullstackAiService,
+      colour: "#c2540a",
+    },
+    {
+      title: "AI Chatbot Development",
+      description:
+        "We create intelligent AI chatbots that enhance customer engagement, automate support, and streamline operations, delivering accurate, context-aware conversations across websites, applications, and enterprise systems.",
+      image: chatbotService,
+      colour: "#0a53c2",
+    },
+    {
+      title: "Web & Mobile Application Development",
+      description:
+        "We design and build scalable web and mobile applications with clean interfaces, robust architectures, and seamless experiences that help businesses launch faster and grow confidently.",
+      image: webMobileService,
+      colour: "#ff7c24",
+    },
+    {
+      title: "AI Agents & Autonomous Workflows",
+      description:
+        "We develop autonomous AI agents that plan, execute, and adapt to automate complex workflows, enabling smarter decision-making and reducing manual effort across business operations.",
+      image: aiWorkflowService,
+      colour: "#26549b",
+    },
+    {
+      title: "Chrome Extension Development",
+      description:
+        "We build secure, high-performance Chrome extensions focused on productivity, automation, and user efficiency, tailored for startups, SaaS platforms, and internal business tools.",
+      image: chromeService,
+      colour: "#cd2505",
+    },
+    {
+      title: "Custom AI Integrations & Automation",
+      description:
+        "We integrate AI seamlessly into existing systems, automating workflows and enhancing functionality to improve efficiency, reduce costs, and transform operations with intelligent automation.",
+      image: aiIntegrationService,
+      colour: "#c2540a",
+    },
+  ],
+};
+
+export const industriesPage = {
+  hero: {
+    heading: "Industries We Empower",
+    description:
+      "Empowering diverse industries through innovative solutions and strategic expertise.",
+  },
+  industries: [
+    {
+      title: "Healthcare",
+      description:
+        "We build secure, compliant digital solutions for healthcare providers, improving patient care, data management, diagnostics, and operational efficiency through scalable and intelligent technology.",
+      image: healthcareIndustry,
+      colour: "#0a53c2",
+    },
+    {
+      title: "E-commerce",
+      description:
+        "We create high-performance e-commerce platforms with seamless user experiences, smart personalization, secure payments, and scalable architectures that drive conversions and long-term business growth.",
+      image: ecommerceIndustry,
+      colour: "#ff7c24",
+    },
+    {
+      title: "Finance",
+      description:
+        "We deliver robust financial technology solutions that enhance security, automate processes, enable real-time insights, and support scalable growth for banks, fintech startups, and financial institutions.",
+      image: financeIndustry,
+      colour: "#cd2505",
+    },
+    {
+      title: "Logistics",
+      description:
+        "We develop intelligent logistics solutions that optimize supply chains, enable real-time tracking, automate operations, and improve efficiency across transportation, warehousing, and distribution networks.",
+      image: logisticsIndustry,
+      colour: "#26549b",
+    },
+  ],
+};
+
+export const portfolioPage = {
+  hero: {
+    heading: "Our Portfolio",
+    description:
+      "Discover our portfolio of high-impact projects, delivering innovative, customized solutions for every client.",
+  },
+  projects: projects,
+};
+
+export const ourPartners = [
+  "Google",
+  "Obvio",
+  "lunedata",
+  "Innovit",
+  "Teggior",
+  "Cannar",
+  "Google",
+  "Obvio",
+  "lunedata",
+  "Innovit",
+  "Teggior",
+  "Cannar",
+  "Google",
+  "Obvio",
+  "lunedata",
+  "Innovit",
+  "Teggior",
+  "Cannar",
+];

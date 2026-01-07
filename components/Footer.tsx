@@ -9,18 +9,18 @@ const Footer = () => {
       style={{ clipPath: "polygon(0% 0, 100% 0%,100% 100%,0 100%)" }}
     >
       <div className="relative h-[calc(100vh+600px)] -top-[100vh]">
-        <div className="max-w-7xl mx-auto sm:px-6 lg:px-8 sticky top-[calc(100vh-600px)] h-[600px] flex flex-col md:flex-row gap-8 items-center md:items-center justify-center md:justify-between">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 sticky top-[calc(100vh-600px)] h-[600px] flex flex-col md:flex-row gap-8 md:items-center justify-center md:justify-between">
           <div>
-            <Image src={footerLogo} alt="Logo" className="w-48" />
+            <Image src={footerLogo} alt="Logo" className="w-32 md:w-48" />
           </div>
           <div className="md:grid md:grid-cols-3 md:gap-auto max-w-3xl flex flex-col gap-8">
             {footerData.map((section, index) => (
-              <div key={index} className="flex flex-col items-center justify-center md:items-start gap-2">
-                <h1 className="text-xl font-semibold text-white">{section.title}</h1>
-                <div className="flex flex-col gap-1 items-baseline-last">
+              <div key={index} className="flex flex-col md:items-start gap-2">
+                <h1 className="text-lg md:text-xl font-semibold text-white">{section.title}</h1>
+                <div className="flex flex-col gap-1">
                   {section.links.map((link, linkIndex) => (
                     <Link key={linkIndex} href={link.src}>
-                    <h1 className="text-lg text-white">{link.title}</h1>
+                    <h1 className="text-sm md:text-lg text-white">{link.title}</h1>
                     </Link>
                   ))}
                 </div>
