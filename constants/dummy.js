@@ -93,14 +93,17 @@ export const projects = [
       {
         image: "/images/symposImg1.webp",
         description: `DivAuctions is a modern, AI-powered auction and e-commerce solution built to help businesses launch, manage, and scale intelligent online marketplaces with confidence. The platform seamlessly supports both traditional bidding-based auctions and instant Buy Now listings, allowing sellers to adapt their sales strategy to different products and audiences.`,
+        colour: "#a093d7"
       },
       {
         image: "/images/symposImg1.webp",
         description: `By leveraging AI-driven insights and automation, DivAuctions enhances decision-making, streamlines operations, and improves the overall user experience. Core processes such as automated invoice generation, secure online payments, and customer management are optimized to reduce manual effort and increase efficiency.`,
+        colour: "#a093d7"
       },
       {
         image: "/images/symposImg1.webp",
         description: `Designed with flexibility and scalability at its core, DivAuctions features a highly customizable architecture that adapts to unique business models, workflows, and branding needs from niche auction platforms to large-scale e-commerce ecosystems. With a strong focus on performance, security, and intelligent automation, DivAuctions empowers businesses to stay competitive in today’s fast-evolving digital marketplace.`,
+        colour: "#a093d7"
       },
     ],
     slug: "DivAuctions",
@@ -123,14 +126,17 @@ export const projects = [
       {
         image: "/images/symposImg1.webp",
         description: `MolaHub is a gift-giving platform that transforms how people share moments that matter. Instead of scrambling to find the perfect gift or coordinating group outings, users can send personalized experiences like a coffee, a meal, or a treat to friends, family, or entire groups with just a few taps. Through an intuitive mobile app, gifts are delivered with personal messages and redeemed seamlessly using QR codes.`,
+        colour: "#a093d7"
       },
       {
         image: "/images/symposImg1.webp",
         description: `The platform connects three communities in one smooth ecosystem. Customers discover and send gifts through the app, while local businesses join as Brand Admins to showcase their offerings and welcome new customers through gift redemptions. Super Admins ensure platform quality by reviewing and approving each brand, maintaining high standards so every shared experience feels special and trustworthy.`,
+        colour: "#a093d7"
       },
       {
         image: "/images/symposImg1.webp",
         description: `What makes MolaHub truly stand out is its simplicity and heart. Thoughtful onboarding personalizes the experience, group gifting makes sharing easy, and real-time notifications keep everything effortless from sending to redemption. For businesses, each gift drives foot traffic and brand discovery; for users, MolaHub removes friction from gifting while preserving its personal touch proving that technology can strengthen human connection, not complicate it.`,
+        colour: "#a093d7"
       },
     ],
     slug: "Molahub",
@@ -153,14 +159,17 @@ export const projects = [
       {
         image: "/images/symposImg1.webp",
         description: `KarCab is an on-demand mobility and logistics platform designed to support a wide range of transportation and delivery services within a single, unified ecosystem. Through a simple and intuitive mobile app, customers can quickly request services such as bike rides, parcel deliveries, carpooling, or intercity travel. Once a request is made, nearby service providers receive it in real time and can choose to accept, enabling fast and efficient service matching.`,
+        colour: "#a093d7"
       },
       {
         image: "/images/symposImg1.webp",
         description: `After acceptance, KarCab securely connects the customer and service provider, allowing trips or deliveries to proceed smoothly with live tracking and real-time status updates. This seamless interaction improves response times, enhances transparency, and creates a reliable experience for both users and providers. Every step from request to completion is designed to be clear, efficient, and easy to follow.`,
+        colour: "#a093d7"
       },
       {
         image: "/images/symposImg1.webp",
         description: `Behind the scenes, KarCab offers a powerful admin panel that gives operators full visibility and control over platform activity. Administrators can monitor trips, manage users and providers, and enforce safety or quality measures when needed. Built with flexibility at its core, KarCab adapts easily to ride-hailing, last-mile delivery, shared mobility, or long-distance travel, making it a scalable and reliable solution for modern transportation and logistics businesses.`,
+        colour: "#a093d7"
       },
     ],
     slug: "KarCab",
@@ -182,14 +191,17 @@ export const projects = [
       {
         image: "/images/symposImg1.webp",
         description: `Dawam Healthcare is a comprehensive digital healthcare platform designed to simplify how patients access quality medical services. It brings together specialized consultant clinics, temperature controlled pharmacies, and internationally standardized diagnostic laboratories into one unified and easy to use experience, making healthcare more accessible and organized for patients.`,
+        colour: "#a093d7"
       },
       {
         image: "/images/symposImg1.webp",
         description: `Built with a patient first approach, Dawam allows users to quickly find doctors by specialization, book appointments through interactive forms, and securely submit their information. The platform is fully responsive across all devices, ensuring patients can access services anytime and anywhere without friction.`,
+        colour: "#a093d7"
       },
       {
         image: "/images/symposImg1.webp",
         description: `To support trust, security, and growth, Dawam Healthcare integrates Google reCAPTCHA to prevent spam and protect user interactions. It also includes Google Business setup to strengthen both online visibility and physical presence, helping patients confidently connect with verified healthcare providers through a reliable and modern digital platform.`,
+        colour: "#a093d7"
       },
     ],
     slug: "Dawam",
@@ -211,14 +223,17 @@ export const projects = [
       {
         image: "/images/symposImg1.webp",
         description: `For GAMI, a blockchain-powered multiplayer mobile game, our role was to significantly reduce operational costs while maintaining performance, scalability, and security. The game’s infrastructure was generating extremely high daily server expenses due to inefficient resource usage and unoptimized application logic.`,
+        colour: "#a093d7"
       },
       {
         image: "/images/symposImg1.webp",
         description: `We conducted a deep analysis of backend services, API calls, data synchronization, and real-time interactions. By optimizing code execution, reducing redundant requests, improving caching strategies, and streamlining blockchain interactions, we dramatically lowered server load.`,
+        colour: "#a093d7"
       },
       {
         image: "/images/symposImg1.webp",
         description: `As a result, daily infrastructure costs dropped from €600 per day to under €100 per day, while preserving smooth gameplay, real-time multiplayer interactions, and transparent in-game transactions. This optimization enabled the client to scale sustainably and reinvest resources into product growth instead of infrastructure overhead.`,
+        colour: "#a093d7"
       },
     ],
     slug: "gami",
@@ -240,14 +255,17 @@ export const projects = [
       {
         image: "/images/symposImg1.webp",
         description: `Carbyne is a secure crypto asset protection platform designed to help users safely store and share private keys and recovery phrases without exposing sensitive information. Wallet credentials are encrypted using a user-defined password and transformed into a protected QR code, allowing users to store or share access with confidence.`,
+        colour: "#a093d7"
       },
       {
         image: "/images/symposImg1.webp",
         description: `Built with a strong focus on privacy and usability, Carbyne ensures that only the intended recipient can decrypt the encrypted data. By removing the need for plain-text storage, screenshots, or insecure messaging, the platform significantly reduces the risk of accidental exposure or theft.`,
+        colour: "#a093d7"
       },
       {
         image: "/images/symposImg1.webp",
         description: `Balancing enterprise-grade security with a clean, user-friendly experience, Carbyne makes crypto key management safer and more accessible for everyday users. It empowers individuals to protect their digital assets while maintaining full control, privacy, and peace of mind.`,
+        colour: "#a093d7"
       },
     ],
     slug: "carbyne",
@@ -269,14 +287,17 @@ export const projects = [
       {
         image: "/images/symposImg1.webp",
         description: `VirtualCEO is a subscription based platform designed to help business owners and entrepreneurs scale faster by providing instant access to fully managed marketing, sales, and technology teams. Instead of spending months recruiting, onboarding, and managing talent, businesses gain experienced professionals who work as a seamless extension of their organization.`,
+        colour: "#a093d7"
       },
       {
         image: "/images/symposImg1.webp",
         description: `With flexible plans and predictable costs, VirtualCEO removes the complexity and overhead of traditional hiring. Companies avoid HR headaches while benefiting from structured processes, proven expertise, and consistent execution across critical business functions.`,
+        colour: "#a093d7"
       },
       {
         image: "/images/symposImg1.webp",
         description: `Whether supporting a startup, a growing company, or an established brand, VirtualCEO delivers the people, systems, and performance needed to drive growth with confidence. By handling execution end to end, the platform allows leaders to stay focused on strategy, innovation, and long-term success.`,
+        colour: "#a093d7"
       },
     ],
     slug: "VirtualCEO",

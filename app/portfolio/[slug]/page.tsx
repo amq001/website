@@ -15,7 +15,7 @@ type ProjectPageProps = {
 type ProjectType = {
   title: string;
   tagline: string;
-  details: { image: string; description: string }[];
+  details: { image: string; description: string, colour: string }[];
   slug: string;
   src: string;
   features: string[];
@@ -33,14 +33,6 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
     <>
       <HeroSection heading={project?.title} description={project?.tagline} />
       <div className="max-w-7xl mx-auto p-4">
-        {/* <div className="flex flex-col items-center gap-8 mb-8">
-          <Image
-            src={project?.src}
-            alt={project?.title}
-            width={800}
-            height={600}
-          />
-        </div> */}
         <div className="flex flex-col gap-2">
           <p className="text-white max-w-4xl text-2xl font-semibold mt-12">
             {`What is ${project?.title}?`}
