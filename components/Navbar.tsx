@@ -36,11 +36,9 @@ const Navbar = () => {
 
   const navLinks = [
     { href: "/", label: "Home" },
-    // { href: "/about", label: "About Us" },
     { href: "/portfolio", label: "Portfolio" },
     { href: "/services", label: "Services" },
     { href: "/industries", label: "Industries" },
-    // { href: "/contact", label: "Contact" },
   ];
 
   return (
@@ -88,15 +86,11 @@ const Navbar = () => {
                 <BiMenu
                   size={30}
                   color="#fff"
-                  // className="text-white hover:text-black"
-                  // onClick={() => setIsMobileMenuOpen(false)}
                 />
               ) : (
                 <BiX
                   size={30}
                   color="#fff"
-                  // className="text-white hover:text-black"
-                  // onClick={() => setIsMobileMenuOpen(true)}
                 />
               )}
             </button>

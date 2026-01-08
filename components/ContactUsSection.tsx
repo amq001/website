@@ -1,13 +1,11 @@
 import Button from "./Button";
 import HeadingComponent from "./HeadingComponent";
 
-// 1900d0
-
 const ContactUsSection = () => {
   return (
-    <div className="bg-black">
+    <div>
 
-    <section className="[background:radial-gradient(125%_125%_at_50%_10%,#000_40%,#753801_80%)] min-h-screen w-full flex flex-col gap-12 items-center bg-black justify-center rounded-b-[50px]">
+    <section className="[background:radial-gradient(125%_125%_at_50%_10%,#000_40%,#753801_80%)] min-h-screen w-full flex flex-col gap-12 items-center justify-center rounded-b-[30px] mdrounded-b-[50px]">
       <HeadingComponent
         heading="Have a Project in Mind?"
         description="Let's Collaborate to Bring Your Vision to Life"

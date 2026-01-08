@@ -1,59 +1,45 @@
-import ecommerceImage from "../public/images/ecommerce.png";
-import fintechImage from "../public/images/fintech.png";
-import healthImage from "../public/images/health.png";
-import ideateImage from "../public/images/ideatee.png";
-import designImage from "../public/images/designn.png";
-import developmentImage from "../public/images/developmentt.png";
-import liveImage from "../public/images/livee.png";
-import logisticsImage from "../public/images/logistics.png";
-import qaImage from "../public/images/qaa.png";
-import supportImage from "../public/images/supportt.png";
-import healthcareIndustry from "../public/images/healthcareIndustry.png";
-import ecommerceIndustry from "../public/images/ecommerceIndustry.png";
-import financeIndustry from "../public/images/financeIndustry.png";
-import logisticsIndustry from "../public/images/logisticsIndustry.png";
-import chromeService from "../public/images/chrome.png";
-import fullstackAiService from "../public/images/fullstackAi.png";
-import chatbotService from "../public/images/chatbot.png";
-import aiIntegrationService from "../public/images/AiIntegration.png";
-import aiWorkflowService from "../public/images/AiWorkflow.png";
-import webMobileService from "../public/images/WebMobile.png";
-// import ideateImage from "../public/images/png/ideateWhite-removebg-preview.png";
-// import designImage from "../public/images/png/designWhite-removebg-preview.png";
-// import developmentImage from "../public/images/png/developmentWhite-removebg-preview.png";
-// import liveImage from "../public/images/png/liveWhite-removebg-preview.png";
-// import qaImage from "../public/images/png/qaWhite-removebg-preview.png";
-// import supportImage from "../public/images//png/supportWhite-removebg-preview.png";
-import { desc, image } from "motion/react-client";
-import { features } from "process";
-
-// export type ProjectType = {
-//   title: string;
-//   description: string;
-//   slug: string;
-//   src: string;
-//   link: string;
-//   color: string;
-// };
+import ecommerceImage from "../public/images/ecommerce.webp";
+import fintechImage from "../public/images/fintech.webp";
+import healthImage from "../public/images/health.webp";
+import ideateImage from "../public/images/ideate.webp";
+import designImage from "../public/images/design.webp";
+import developmentImage from "../public/images/development.webp";
+import liveImage from "../public/images/live.webp";
+import logisticsImage from "../public/images/logistics.webp";
+import qaImage from "../public/images/qa.webp";
+import supportImage from "../public/images/support.webp";
+import healthcareIndustry from "../public/images/healthcareIndustry.webp";
+import ecommerceIndustry from "../public/images/ecommerceIndustry.webp";
+import financeIndustry from "../public/images/financeIndustry.webp";
+import logisticsIndustry from "../public/images/logisticsIndustry.webp";
+import chromeService from "../public/images/chrome.webp";
+import fullstackAiService from "../public/images/fullstackAi.webp";
+import chatbotService from "../public/images/chatbot.webp";
+import aiIntegrationService from "../public/images/AiIntegration.webp";
+import aiWorkflowService from "../public/images/AiWorkflow.webp";
+import webMobileService from "../public/images/WebMobile.webp";
 
 export const projects = [
   {
     title: "Sympos AI",
     tagline: `Sympos AI transforms decision-making by letting multiple AI minds debate, challenge bias, and
     deliver balanced, high-confidence insights`,
-    src: "/images/symposImg1.png",
+    src: "/images/symposImg.webp",
     details: [
       {
-        image: "/images/symposImg1.png",
+        image: "/images/symposDetail2.webp",
         description: `Sympos AI is a next generation AI debate platform built to reduce bias and strengthen decision making by orchestrating structured discussions between multiple large language models. Instead of relying on a single AI response, Sympos AI brings together diverse AI systems each operating under a distinct expert persona to analyze problems from multiple angles.`,
+        colour: "#a093d7"
       },
       {
-        image: "/images/symposImg1.png",
+        image: "/images/symposDetail1.webp",
         description: `By simulating debates between Visionary, Strategist, Analyst, Ethicist, and Contrarian personas, the platform uncovers hidden assumptions, ethical concerns, strategic risks, and data driven insights that are often missed by standalone models. The result is a more transparent, balanced, and well reasoned outcome.`,
+        colour: "#a093d7"
       },
       {
-        image: "/images/symposImg1.png",
+        image: "/images/symposDetail3.webp",
         description: `Sympos AI delivers clear debate summaries, final resolutions, and conflict analyses, making it an ideal solution for research, strategy, policy evaluation, and high impact decision making where accuracy and fairness matter most.`,
+        colour: "#a093d7"
       },
     ],
     slug: "SymposAi",
@@ -70,19 +56,22 @@ export const projects = [
   {
     title: "Razacar",
     tagline: `Razacar is an AI-powered, community driven carpooling platform that enables secure, affordable, and eco-friendly daily commuting for organizations.`,
-    src: "/images/razacar1.png",
+    src: "/images/razacar.webp",
     details: [
       {
-        image: "/images/symposImg1.png",
+        image: "/images/symposDetail2.webp",
         description: `Razacar is an AI-powered, organization-focused ride booking and carpooling platform designed to transform daily commuting into a smarter, more sustainable experience. Built specifically for companies and institutions, the platform enables employees within the same organization to share rides safely, efficiently, and conveniently.`,
+        colour: "#a093d7"
       },
       {
-        image: "/images/symposImg1.png",
+        image: "/images/symposDetail2.webp",
         description: `Using intelligent matching algorithms, Razacar analyzes routes, schedules, and user preferences to connect commuters with optimal carpool partners. This maximizes vehicle utilization, reduces traffic congestion, and significantly lowers commuting costs. Access is restricted to verified members of the same organization, ensuring privacy, trust, and a secure commuting environment.`,
+        colour: "#a093d7"
       },
       {
-        image: "/images/symposImg1.png",
+        image: "/images/symposDetail2.webp",
         description: `By reducing the number of vehicles on the road and encouraging shared transportation, Razacar helps organizations lower their carbon footprint while fostering a strong sense of community among employees. With a focus on efficiency, sustainability, and user experience, Razacar delivers a modern, AI driven solution for greener and more cost effective commuting.`,
+        colour: "#a093d7"
       },
     ],
     slug: "Razacar",
@@ -99,18 +88,18 @@ export const projects = [
   {
     title: "DivAuctions",
     tagline: `DivAuctions is an AI-powered, all-in-one auction and e-commerce platform designed to enable smarter, faster, and more flexible online selling`,
-    src: "/images/divauction.png",
+    src: "/images/divauction.webp",
     details: [
       {
-        image: "/images/symposImg1.png",
+        image: "/images/symposImg1.webp",
         description: `DivAuctions is a modern, AI-powered auction and e-commerce solution built to help businesses launch, manage, and scale intelligent online marketplaces with confidence. The platform seamlessly supports both traditional bidding-based auctions and instant Buy Now listings, allowing sellers to adapt their sales strategy to different products and audiences.`,
       },
       {
-        image: "/images/symposImg1.png",
+        image: "/images/symposImg1.webp",
         description: `By leveraging AI-driven insights and automation, DivAuctions enhances decision-making, streamlines operations, and improves the overall user experience. Core processes such as automated invoice generation, secure online payments, and customer management are optimized to reduce manual effort and increase efficiency.`,
       },
       {
-        image: "/images/symposImg1.png",
+        image: "/images/symposImg1.webp",
         description: `Designed with flexibility and scalability at its core, DivAuctions features a highly customizable architecture that adapts to unique business models, workflows, and branding needs from niche auction platforms to large-scale e-commerce ecosystems. With a strong focus on performance, security, and intelligent automation, DivAuctions empowers businesses to stay competitive in today’s fast-evolving digital marketplace.`,
       },
     ],
@@ -129,18 +118,18 @@ export const projects = [
   {
     title: "Molahub",
     tagline: `Small acts, big smiles MolaHub makes meaningful gift giving effortless by connecting people through personalized experiences at their favorite local brands`,
-    src: "/images/molahub2.png",
+    src: "/images/molahub.webp",
     details: [
       {
-        image: "/images/symposImg1.png",
+        image: "/images/symposImg1.webp",
         description: `MolaHub is a gift-giving platform that transforms how people share moments that matter. Instead of scrambling to find the perfect gift or coordinating group outings, users can send personalized experiences like a coffee, a meal, or a treat to friends, family, or entire groups with just a few taps. Through an intuitive mobile app, gifts are delivered with personal messages and redeemed seamlessly using QR codes.`,
       },
       {
-        image: "/images/symposImg1.png",
+        image: "/images/symposImg1.webp",
         description: `The platform connects three communities in one smooth ecosystem. Customers discover and send gifts through the app, while local businesses join as Brand Admins to showcase their offerings and welcome new customers through gift redemptions. Super Admins ensure platform quality by reviewing and approving each brand, maintaining high standards so every shared experience feels special and trustworthy.`,
       },
       {
-        image: "/images/symposImg1.png",
+        image: "/images/symposImg1.webp",
         description: `What makes MolaHub truly stand out is its simplicity and heart. Thoughtful onboarding personalizes the experience, group gifting makes sharing easy, and real-time notifications keep everything effortless from sending to redemption. For businesses, each gift drives foot traffic and brand discovery; for users, MolaHub removes friction from gifting while preserving its personal touch proving that technology can strengthen human connection, not complicate it.`,
       },
     ],
@@ -159,18 +148,18 @@ export const projects = [
     title: "KarCab",
     tagline: `KarCab is a flexible on demand logistics and ride booking platform that seamlessly
     connects customers, service providers, and administrators in real time`,
-    src: "/images/karcab.png",
+    src: "/images/karcab.webp",
     details: [
       {
-        image: "/images/symposImg1.png",
+        image: "/images/symposImg1.webp",
         description: `KarCab is an on-demand mobility and logistics platform designed to support a wide range of transportation and delivery services within a single, unified ecosystem. Through a simple and intuitive mobile app, customers can quickly request services such as bike rides, parcel deliveries, carpooling, or intercity travel. Once a request is made, nearby service providers receive it in real time and can choose to accept, enabling fast and efficient service matching.`,
       },
       {
-        image: "/images/symposImg1.png",
+        image: "/images/symposImg1.webp",
         description: `After acceptance, KarCab securely connects the customer and service provider, allowing trips or deliveries to proceed smoothly with live tracking and real-time status updates. This seamless interaction improves response times, enhances transparency, and creates a reliable experience for both users and providers. Every step from request to completion is designed to be clear, efficient, and easy to follow.`,
       },
       {
-        image: "/images/symposImg1.png",
+        image: "/images/symposImg1.webp",
         description: `Behind the scenes, KarCab offers a powerful admin panel that gives operators full visibility and control over platform activity. Administrators can monitor trips, manage users and providers, and enforce safety or quality measures when needed. Built with flexibility at its core, KarCab adapts easily to ride-hailing, last-mile delivery, shared mobility, or long-distance travel, making it a scalable and reliable solution for modern transportation and logistics businesses.`,
       },
     ],
@@ -186,20 +175,20 @@ export const projects = [
     type: "mobileApp",
   },
   {
-    title: "Dawam ",
+    title: "Dawam",
     tagline: `Dawam is an integrated healthcare platform connecting patients with trusted clinics, pharmacies, and diagnostic services seamlessly and securely`,
-    src: "/images/dawam.png",
+    src: "/images/dawam.webp",
     details: [
       {
-        image: "/images/symposImg1.png",
+        image: "/images/symposImg1.webp",
         description: `Dawam Healthcare is a comprehensive digital healthcare platform designed to simplify how patients access quality medical services. It brings together specialized consultant clinics, temperature controlled pharmacies, and internationally standardized diagnostic laboratories into one unified and easy to use experience, making healthcare more accessible and organized for patients.`,
       },
       {
-        image: "/images/symposImg1.png",
+        image: "/images/symposImg1.webp",
         description: `Built with a patient first approach, Dawam allows users to quickly find doctors by specialization, book appointments through interactive forms, and securely submit their information. The platform is fully responsive across all devices, ensuring patients can access services anytime and anywhere without friction.`,
       },
       {
-        image: "/images/symposImg1.png",
+        image: "/images/symposImg1.webp",
         description: `To support trust, security, and growth, Dawam Healthcare integrates Google reCAPTCHA to prevent spam and protect user interactions. It also includes Google Business setup to strengthen both online visibility and physical presence, helping patients confidently connect with verified healthcare providers through a reliable and modern digital platform.`,
       },
     ],
@@ -217,18 +206,18 @@ export const projects = [
   {
     title: "Gami",
     tagline: `We optimized GAMI’s backend and application flow to cut server costs by over 80% without compromising gameplay or blockchain integrity.`,
-    src: "/images/gami.png",
+    src: "/images/gami.webp",
     details: [
       {
-        image: "/images/symposImg1.png",
+        image: "/images/symposImg1.webp",
         description: `For GAMI, a blockchain-powered multiplayer mobile game, our role was to significantly reduce operational costs while maintaining performance, scalability, and security. The game’s infrastructure was generating extremely high daily server expenses due to inefficient resource usage and unoptimized application logic.`,
       },
       {
-        image: "/images/symposImg1.png",
+        image: "/images/symposImg1.webp",
         description: `We conducted a deep analysis of backend services, API calls, data synchronization, and real-time interactions. By optimizing code execution, reducing redundant requests, improving caching strategies, and streamlining blockchain interactions, we dramatically lowered server load.`,
       },
       {
-        image: "/images/symposImg1.png",
+        image: "/images/symposImg1.webp",
         description: `As a result, daily infrastructure costs dropped from €600 per day to under €100 per day, while preserving smooth gameplay, real-time multiplayer interactions, and transparent in-game transactions. This optimization enabled the client to scale sustainably and reinvest resources into product growth instead of infrastructure overhead.`,
       },
     ],
@@ -246,18 +235,18 @@ export const projects = [
   {
     title: "Carbyne",
     tagline: `Carbyne secures your crypto wallet by turning sensitive keys into encrypted, shareable QR codes safe, simple, and private`,
-    src: "/images/carbyne.png",
+    src: "/images/carbyne.webp",
     details: [
       {
-        image: "/images/symposImg1.png",
+        image: "/images/symposImg1.webp",
         description: `Carbyne is a secure crypto asset protection platform designed to help users safely store and share private keys and recovery phrases without exposing sensitive information. Wallet credentials are encrypted using a user-defined password and transformed into a protected QR code, allowing users to store or share access with confidence.`,
       },
       {
-        image: "/images/symposImg1.png",
+        image: "/images/symposImg1.webp",
         description: `Built with a strong focus on privacy and usability, Carbyne ensures that only the intended recipient can decrypt the encrypted data. By removing the need for plain-text storage, screenshots, or insecure messaging, the platform significantly reduces the risk of accidental exposure or theft.`,
       },
       {
-        image: "/images/symposImg1.png",
+        image: "/images/symposImg1.webp",
         description: `Balancing enterprise-grade security with a clean, user-friendly experience, Carbyne makes crypto key management safer and more accessible for everyday users. It empowers individuals to protect their digital assets while maintaining full control, privacy, and peace of mind.`,
       },
     ],
@@ -275,18 +264,18 @@ export const projects = [
   {
     title: "Virtual CEO",
     tagline: `Your complete marketing, sales, and tech tea on subscription, without the hiring hassle`,
-    src: "/images/virtualCeo.png",
+    src: "/images/virtualCeo.webp",
     details: [
       {
-        image: "/images/symposImg1.png",
+        image: "/images/symposImg1.webp",
         description: `VirtualCEO is a subscription based platform designed to help business owners and entrepreneurs scale faster by providing instant access to fully managed marketing, sales, and technology teams. Instead of spending months recruiting, onboarding, and managing talent, businesses gain experienced professionals who work as a seamless extension of their organization.`,
       },
       {
-        image: "/images/symposImg1.png",
+        image: "/images/symposImg1.webp",
         description: `With flexible plans and predictable costs, VirtualCEO removes the complexity and overhead of traditional hiring. Companies avoid HR headaches while benefiting from structured processes, proven expertise, and consistent execution across critical business functions.`,
       },
       {
-        image: "/images/symposImg1.png",
+        image: "/images/symposImg1.webp",
         description: `Whether supporting a startup, a growing company, or an established brand, VirtualCEO delivers the people, systems, and performance needed to drive growth with confidence. By handling execution end to end, the platform allows leaders to stay focused on strategy, innovation, and long-term success.`,
       },
     ],

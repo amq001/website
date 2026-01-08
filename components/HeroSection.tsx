@@ -8,15 +8,12 @@ type Prop = {
   heading: string;
   description: string;
   textCycle?: string[];
-  // type?: "hero" | "standard";
 };
-// bg-black [background:radial-gradient(125%_125%_at_50%_10%,#000_40%,#F37036_100%)
 
 const HeroSection = ({
   heading,
   description,
   textCycle,
-  // type = "standard",
 }: Prop) => {
   return (
     <WavyBackground className="max-w-screen overflow-x-hidden">
@@ -59,4 +56,3 @@ const HeroSection = ({
 };
 
 export default HeroSection;
-// F37036

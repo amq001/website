@@ -4,7 +4,7 @@ import "./globals.css";
 
 const roboto = Roboto({
   subsets: ["latin"],
-  weight: ["400", "500", "700"], // choose what you need
+  weight: ["400", "500", "700"],
 });
 
 export default function RootLayout({

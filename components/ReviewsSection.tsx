@@ -46,11 +46,6 @@ const testimonials = [
       `Great work as always`,
     name: "Imelda Fossu",
   },
-  // {
-  //   quote:
-  //     "Excellent work! Wajeeh is extremely knowledgeable and professional. He even made suggestions that improved on our original plans.",
-  //   name: "First",
-  // },
   {
     quote:
       "It was a pleasure to work with DivDash, they are able to grasp your project quickly. They have the ability to provide multiple technical solutions to a problem and is extremely competent in two areas needed for our project which are flutter and firebase functions.",

@@ -4,6 +4,7 @@ import HeroSection from "@/components/HeroSection";
 import { ReviewsSection } from "@/components/ReviewsSection";
 import ContactUsSection from "@/components/ContactUsSection";
 import Footer from "@/components/Footer";
+import SectionComponent from "@/components/SectionComponent";
 
 type ProjectPageProps = {
   params: {
@@ -15,9 +16,6 @@ type ProjectType = {
   title: string;
   tagline: string;
   details: { image: string; description: string }[];
-  // description1: string;
-  // description2: string;
-  // description3: string;
   slug: string;
   src: string;
   features: string[];
@@ -33,41 +31,39 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
 
   return (
     <>
-      <HeroSection
-        heading={project?.title}
-        description={project?.tagline}
-      />
+      <HeroSection heading={project?.title} description={project?.tagline} />
       <div className="max-w-7xl mx-auto p-4">
-        <div className="flex flex-col items-center gap-8 mb-8">
+        {/* <div className="flex flex-col items-center gap-8 mb-8">
           <Image
             src={project?.src}
             alt={project?.title}
             width={800}
             height={600}
           />
-        </div>
+        </div> */}
         <div className="flex flex-col gap-2">
           <p className="text-white max-w-4xl text-2xl font-semibold mt-12">
             {`What is ${project?.title}?`}
           </p>
+          <div>
           {project?.details.map((detail, index) => (
-            <p key={index} className="text-white max-w-4xl text-xl">
-              {detail.description}
-            </p>
+            <SectionComponent key={index} index={index} colour={detail.colour} image={detail.image} description={detail.description} />
           ))}
-          <p className="text-white max-w-4xl text-2xl font-semibold mt-12">
-            {`Core Features & Benefits`}
-          </p>
-          {project?.features && (
-            <ul className="list-disc list-inside text-white max-w-4xl text-xl">
-              {project.features.map((feature, index) => (
-                <li key={index} className="mb-2">
-                  {" "}
-                  {feature}
-                </li>
-              ))}
-            </ul>
-          )}
+          </div>
+          <div className="flex flex-col gap-2">
+            <p className="text-white max-w-4xl text-2xl font-semibold mt-12">
+              {`Core Features & Benefits`}
+            </p>
+            {project?.features && (
+              <ul className="list-disc list-inside text-white max-w-4xl text-xl">
+                {project.features.map((feature, index) => (
+                  <li key={index} className="mb-2 text-sm md:text-lg">
+                    {feature}
+                  </li>
+                ))}
+              </ul>
+            )}
+          </div>
         </div>
       </div>
       <ReviewsSection />
