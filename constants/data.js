@@ -42,7 +42,7 @@ export const projects = [
         colour: "#a093d7"
       },
     ],
-    slug: "SymposAi",
+    slug: "sympos-ai",
     features: [
       "Multi-LLM integration using models like ChatGPT, Claude, Gemini, Grok, and DeepSeek",
       "Persona-driven AI debates for diverse, expert-level perspectives",
@@ -74,7 +74,7 @@ export const projects = [
         colour: "#afd47c"
       },
     ],
-    slug: "Razacar",
+    slug: "razacar",
     features: [
       "AI-Powered Ride Matching: Intelligently matches commuters based on routes, schedules, and preferences",
       "Eco-Friendly Commuting: Reduces carbon emissions by maximizing ride sharing and minimizing vehicle usage",
@@ -106,7 +106,7 @@ export const projects = [
         colour: "#da6d3a"
       },
     ],
-    slug: "DivAuctions",
+    slug: "divauctions",
     features: [
       "AI-powered insights to optimize listings, pricing, and sales performance",
       "Supports both auction-based and Buy Now listings within one unified platform",
@@ -139,7 +139,7 @@ export const projects = [
         colour: "#e84ebc"
       },
     ],
-    slug: "Molahub",
+    slug: "molahub",
     features: [
       "Effortless Gift Sending: Customers send personalized gifts (coffee, meals, experiences) to individuals or groups with just a few taps, complete with custom messages and scheduled meetups",
       "Smart Personalization Engine: Onboarding questionnaire captures preferences for mood boosters, favorite brands, and meaningful moments to deliver tailored gift recommendations",
@@ -172,7 +172,7 @@ export const projects = [
         colour: "#d85834"
       },
     ],
-    slug: "KarCab",
+    slug: "karcab",
     features: [
       "On demand service booking for rides, deliveries, and logistics",
       "Real time matching between customers and service providers",
@@ -204,7 +204,7 @@ export const projects = [
         colour: "#2c53ca"
       },
     ],
-    slug: "Dawam",
+    slug: "dawam",
     features: [
       "Integrated platform for clinics, pharmacies, and diagnostic labs",
       "Smart doctor filtering based on specialization for easy discovery",
@@ -281,7 +281,7 @@ export const projects = [
   },
   {
     title: "Virtual CEO",
-    tagline: `Your complete marketing, sales, and tech tea on subscription, without the hiring hassle`,
+    tagline: `Your complete marketing, sales, and tech team on subscription, without the hiring hassle`,
     src: "/images/virtualCeo.webp",
     details: [
       {
@@ -300,7 +300,7 @@ export const projects = [
         colour: "#752ae0"
       },
     ],
-    slug: "VirtualCEO",
+    slug: "virtual-ceo",
     features: [
       "Subscription-based access to marketing, sales, and tech professionals",
       "No recruitment, onboarding, or HR management required",
