@@ -126,17 +126,17 @@ export const projects = [
       {
         image: "/images/molahubDetail1.webp",
         description: `MolaHub is a gift-giving platform that transforms how people share moments that matter. Instead of scrambling to find the perfect gift or coordinating group outings, users can send personalized experiences like a coffee, a meal, or a treat to friends, family, or entire groups with just a few taps. Through an intuitive mobile app, gifts are delivered with personal messages and redeemed seamlessly using QR codes.`,
-        colour: "#da6d3a"
+        colour: "#e84ebc"
       },
       {
         image: "/images/molahubDetail2.webp",
         description: `The platform connects three communities in one smooth ecosystem. Customers discover and send gifts through the app, while local businesses join as Brand Admins to showcase their offerings and welcome new customers through gift redemptions. Super Admins ensure platform quality by reviewing and approving each brand, maintaining high standards so every shared experience feels special and trustworthy.`,
-        colour: "#da6d3a"
+        colour: "#e84ebc"
       },
       {
         image: "/images/molahubDetail3.webp",
         description: `What makes MolaHub truly stand out is its simplicity and heart. Thoughtful onboarding personalizes the experience, group gifting makes sharing easy, and real-time notifications keep everything effortless from sending to redemption. For businesses, each gift drives foot traffic and brand discovery; for users, MolaHub removes friction from gifting while preserving its personal touch proving that technology can strengthen human connection, not complicate it.`,
-        colour: "#da6d3a"
+        colour: "#e84ebc"
       },
     ],
     slug: "Molahub",
@@ -255,17 +255,17 @@ export const projects = [
       {
         image: "/images/carbyneDetail1.webp",
         description: `Carbyne is a secure crypto asset protection platform designed to help users safely store and share private keys and recovery phrases without exposing sensitive information. Wallet credentials are encrypted using a user-defined password and transformed into a protected QR code, allowing users to store or share access with confidence.`,
-        colour: "#7f180b"
+        colour: "#cc321e"
       },
       {
         image: "/images/carbyneDetail2.webp",
         description: `Built with a strong focus on privacy and usability, Carbyne ensures that only the intended recipient can decrypt the encrypted data. By removing the need for plain-text storage, screenshots, or insecure messaging, the platform significantly reduces the risk of accidental exposure or theft.`,
-        colour: "#7f180b"
+        colour: "#cc321e"
       },
       {
         image: "/images/carbyneDetail3.webp",
         description: `Balancing enterprise-grade security with a clean, user-friendly experience, Carbyne makes crypto key management safer and more accessible for everyday users. It empowers individuals to protect their digital assets while maintaining full control, privacy, and peace of mind.`,
-        colour: "#7f180b"
+        colour: "#cc321e"
       },
     ],
     slug: "carbyne",
