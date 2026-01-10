@@ -44,7 +44,7 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
             />
           ))}
         </div>
-        <p className="text-white max-w-4xl text-2xl font-semibold mt-12">
+        <p className="text-white max-w-4xl text-xl md:text-2xl font-semibold mt-12">
           {`Core Features & Benefits`}
         </p>
         {project?.features && (
