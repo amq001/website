@@ -1,6 +1,5 @@
 "use client";
 import { motion, MotionValue, useScroll, useTransform } from "framer-motion";
-import Image from "next/image";
 import { useLayoutEffect, useRef, useState } from "react";
 import Reveal from "./Reveal";
 
