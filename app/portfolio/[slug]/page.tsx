@@ -15,7 +15,7 @@ type ProjectPageProps = {
 type ProjectType = {
   title: string;
   tagline: string;
-  details: { image: string; description: string, colour: string }[];
+  details: { image: string; description: string; colour: string }[];
   slug: string;
   src: string;
   features: string[];
@@ -32,31 +32,30 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
   return (
     <>
       <HeroSection heading={project?.title} description={project?.tagline} />
-      <div className="max-w-7xl mx-auto p-4">
-        <div className="flex flex-col gap-2">
-          <p className="text-white max-w-4xl text-2xl font-semibold mt-12">
-            {`What is ${project?.title}?`}
-          </p>
-          <div>
+      <div className="max-w-7xl mx-auto p-4 flex flex-col gap-2">
+        <div>
           {project?.details.map((detail, index) => (
-            <SectionComponent key={index} index={index} colour={detail.colour} image={detail.image} description={detail.description} />
+            <SectionComponent
+              key={index}
+              index={index}
+              colour={detail.colour}
+              image={detail.image}
+              description={detail.description}
+            />
           ))}
-          </div>
-          <div className="flex flex-col gap-2">
-            <p className="text-white max-w-4xl text-2xl font-semibold mt-12">
-              {`Core Features & Benefits`}
-            </p>
-            {project?.features && (
-              <ul className="list-disc list-inside text-white max-w-4xl text-xl">
-                {project.features.map((feature, index) => (
-                  <li key={index} className="mb-2 text-sm md:text-lg">
-                    {feature}
-                  </li>
-                ))}
-              </ul>
-            )}
-          </div>
         </div>
+        <p className="text-white max-w-4xl text-2xl font-semibold mt-12">
+          {`Core Features & Benefits`}
+        </p>
+        {project?.features && (
+          <ul className="list-disc list-inside text-white max-w-4xl text-xl">
+            {project.features.map((feature, index) => (
+              <li key={index} className="mb-2 text-sm md:text-lg">
+                {feature}
+              </li>
+            ))}
+          </ul>
+        )}
       </div>
       <ReviewsSection />
       <ContactUsSection />

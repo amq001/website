@@ -1,3 +1,4 @@
+import Link from "next/link";
 import Button from "./Button";
 import HeadingComponent from "./HeadingComponent";
 
@@ -12,7 +13,9 @@ const ContactUsSection = () => {
         variant="secondary"
         textCentered={true}
       />
+      <Link target="blank" href={"https://calendar.google.com/calendar/u/0/appointments/schedules/AcZssZ0oSh5ktNL5jQ-Exo-gwAn-ZVy9bsjmzxKEdBDbxMlnQiiiETJCdcowfsTRzUswmaOSZzjsiS6T"}>
       <Button variant="bordered">Book a Call</Button>
+      </Link>
     </section>
         </div>
   );
