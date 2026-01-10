@@ -1,14 +1,14 @@
 import ContactUsSection from "@/components/ContactUsSection";
 import Footer from "@/components/Footer";
-import HeroSection3 from "@/components/HeroSection";
+import HeroSection from "@/components/HeroSection";
 import { ReviewsSection } from "@/components/ReviewsSection";
 import SectionComponent from "@/components/SectionComponent";
-import { servicesPage } from "@/constants/dummy";
+import { servicesPage } from "@/constants/data";
 
 const page = () => {
   return (
     <div className="scroll-smooth">
-      <HeroSection3
+      <HeroSection
         heading={servicesPage.hero.heading}
         description={servicesPage.hero.description}
       />

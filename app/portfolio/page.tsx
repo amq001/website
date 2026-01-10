@@ -3,7 +3,7 @@ import Footer from "@/components/Footer";
 import HeroSection from "@/components/HeroSection";
 import { ReviewsSection } from "@/components/ReviewsSection";
 import StickyCard from "@/components/StickyCard";
-import { portfolioPage } from "@/constants/dummy";
+import { portfolioPage } from "@/constants/data";
 
 const page = () => {
   return (

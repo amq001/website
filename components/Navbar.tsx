@@ -6,7 +6,7 @@ import { useEffect, useState } from "react";
 import { BiMenu, BiX } from "react-icons/bi";
 import footerLogo from "../public/footer-logo.svg";
 import Button from "./Button";
-import Container from "./Container";
+// import Container from "./Container";
 
 const Navbar = () => {
   const [isVisible, setIsVisible] = useState(true);
@@ -47,8 +47,8 @@ const Navbar = () => {
         isVisible ? "translate-y-0 my-4" : "-translate-y-full m-0"
       }`}
     >
-      <Container
-        className={`flex p-4 rounded-2xl backdrop-filter backdrop-blur-md bg-black/50 justify-between items-center w-full`}
+      <div
+        className={`max-w-7xl mx-auto sm:px-6 lg:px-8 flex p-4 rounded-2xl backdrop-filter backdrop-blur-md bg-black/50 justify-between items-center w-full`}
       >
         <div className="position-relative w-24 h-6 md:w-32 md:h-8">
           <Link href="/">
@@ -96,7 +96,7 @@ const Navbar = () => {
             </button>
           </div>
         </div>
-      </Container>
+      </div>
       <div
         className={`md:hidden transition-all duration-300 ease-in-out ${
           !isMobileMenuOpen

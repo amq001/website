@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { projects } from "@/constants/dummy";
+import { projects } from "@/constants/data";
 import HeroSection from "@/components/HeroSection";
 import { ReviewsSection } from "@/components/ReviewsSection";
 import ContactUsSection from "@/components/ContactUsSection";

@@ -4,8 +4,8 @@ import HeroSection from "@/components/HeroSection";
 import PortfolioSection from "@/components/PortfolioSection";
 import { ProcessSection } from "@/components/ProcessSection";
 import { ReviewsSection } from "@/components/ReviewsSection";
-import { homePage } from "@/constants/dummy";
-import ProcessSection2 from "@/components/ProcessSection2";
+import { homePage } from "@/constants/data";
+import ServicesSection from "@/components/ServicesSection";
 import WhyUsSection from "@/components/WhyUsSection";
 
 export default function Home() {
@@ -16,14 +16,16 @@ export default function Home() {
         description={homePage.hero.description}
         textCycle={homePage.hero.changingText}
       />
+      {/* --- Portfolio Section --- */}
       <PortfolioSection heading={homePage.portfolio.heading} portfolio={homePage.portfolio.projects} />
+      {/* --- Steps Section --- */}
       <ProcessSection
         heading={homePage.process.heading}
         description={homePage.process.description}
         cards={homePage.process.processCards}
       />
-      {/* <HorizontalScroll cards={homePage.process.processCards} /> */}
-      <ProcessSection2
+      {/* --- Services Section --- */}
+      <ServicesSection
         heading={homePage.services.heading}
         cards={homePage.services.servicesCards}
       />
@@ -41,17 +43,6 @@ export default function Home() {
       <ReviewsSection />
       <ContactUsSection />
       <Footer />
-      {/* <ProcessSection
-        heading="From Idea to Product"
-        description="A refined process that turns ideas into scalable, high-quality
-            products. From concept to launch, we build with purpose and
-            precision."
-      /> */}
-      {/* --- development process */}
-      {/* <BentoGrid /> */}
-      {/* <AboutSection /> */}
-      {/* <ReviewsSection /> */}
-      {/* <TechnologiesSection /> */}
     </div>
   );
 }

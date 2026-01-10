@@ -3,7 +3,7 @@ import Footer from "@/components/Footer";
 import HeroSection from "@/components/HeroSection";
 import { ReviewsSection } from "@/components/ReviewsSection";
 import SectionComponent from "@/components/SectionComponent";
-import { industriesPage } from "@/constants/dummy";
+import { industriesPage } from "@/constants/data";
 
 const page = () => {
   return (

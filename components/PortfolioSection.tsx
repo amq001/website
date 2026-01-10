@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { projects } from "../constants/dummy";
+import { projects } from "../constants/data";
 import Button from "./Button";
 import HeadingComponent from "./HeadingComponent";
 import StickyCard from "./StickyCard";

@@ -12,9 +12,9 @@ type Props = {
   }[];
 };
 
-const ProcessSection2 = ({ heading, description, cards }: Props) => {
+const ServicesSection = ({ heading, description, cards }: Props) => {
   return (
-    <div className="min-h-screen flex flex-col bg-black pt-20">
+    <div className="min-h-screen flex flex-col pt-20">
       <div className="flex justify-center items-center ">
         <HeadingComponent
           heading={heading || "Our Proven Process"}
@@ -28,4 +28,4 @@ const ProcessSection2 = ({ heading, description, cards }: Props) => {
   );
 };
 
-export default ProcessSection2;
+export default ServicesSection;

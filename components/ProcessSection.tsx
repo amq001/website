@@ -20,14 +20,6 @@ export function ProcessSection({ heading, description, cards }: Props) {
       <div className="flex flex-col  gap-8 xl:gap-0 xl:flex-row w-full xl:w-[calc(100vw-32px)] mx-auto px-4 sm:px-8 md:px-20">
         <div className="xl:sticky rounded-sm xl:rounded-none xl:px-20 flex items-center flex-col gap-4 justify-center xl:max-w-[1/2] w-full xl:top-16 xl:h-[80vh] xl:rounded-l-2xl xl:bg-[linear-gradient(270deg,#000_20%,#d66702_200%)]">
         <HeadingComponent variant="secondary" textCentered={true} heading={heading} description={description} />
-          {/* <Reveal>
-            <h3 className="text-3xl md:text-5xl font-medium text-center text-white">
-              {heading}
-            </h3>
-          </Reveal>
-          <Reveal>
-            <p className="text-white text-center">{description}</p>
-          </Reveal> */}
         </div>
         <div className="flex flex-col gap-8 rounded-sm xl:rounded-none xl:rounded-r-2xl xl:bg-[linear-gradient(90deg,#000_20%,#d66702_200%)] w-full xl:max-w-[1/2] ">
           {cards &&

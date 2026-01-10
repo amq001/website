@@ -1,4 +1,4 @@
-import { ourPartners } from "@/constants/dummy";
+import { ourPartners } from "@/constants/data";
 import Reveal from "./Reveal";
 import TextCycleAnimation from "./TextCycleAnimation";
 import { InfiniteMovingText } from "./ui/infinite-moving-text";

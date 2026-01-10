@@ -5,7 +5,7 @@ import Link from "next/link";
 const Footer = () => {
   return (
     <div
-      className="relative h-[600px] bg-black"
+      className="relative h-[600px]"
       style={{ clipPath: "polygon(0% 0, 100% 0%,100% 100%,0 100%)" }}
     >
       <div className="relative h-[calc(100vh+600px)] -top-[100vh]">
@@ -26,22 +26,6 @@ const Footer = () => {
                 </div>
               </div>
             ))}
-            {/* <div className="flex flex-col items-center justify-center md:items-start gap-2">
-              <h1 className="text-xl font-semibold text-white">Reach us out</h1>
-              <div className="flex flex-col gap-1">
-                <h1 className="text-lg text-white">Footer</h1>
-                <h1 className="text-lg text-white">Footer</h1>
-              </div>
-            </div>
-            <div className="flex flex-col items-center justify-center md:items-start gap-2">
-              <h1 className="text-xl font-semibold text-white">
-                Follow us on Social Media
-              </h1>
-              <div className="flex flex-col gap-1">
-                <h1 className="text-lg text-white">Footer</h1>
-                <h1 className="text-lg text-white">Footer</h1>
-              </div>
-            </div> */}
           </div>
         </div>
       </div>

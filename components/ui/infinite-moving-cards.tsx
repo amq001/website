@@ -103,9 +103,6 @@ export const InfiniteMovingCards = ({
                   <span className="text-sm leading-[1.6] font-normal text-gray-400">
                     {item.name}
                   </span>
-                  {/* <span className="text-sm leading-[1.6] font-normal text-gray-400">
-                    {item.title}
-                  </span> */}
                 </span>
               </div>
             </blockquote>
