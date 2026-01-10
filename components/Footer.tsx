@@ -16,14 +16,22 @@ const Footer = () => {
           <div className="md:grid md:grid-cols-3 md:gap-auto max-w-3xl flex flex-col gap-8">
             {footerData.map((section, index) => (
               <div key={index} className="flex flex-col md:items-start gap-2">
-                <h1 className="text-lg md:text-xl font-semibold text-white">{section.title}</h1>
+                <h1 className="text-lg md:text-xl font-semibold text-white">
+                  {section.title}
+                </h1>
                 <div className="flex flex-col gap-1">
                   {section.links.map((link, linkIndex) => (
-                    <div className="flex flex-col gap-2">
-                      {link?.heading && <h2 className="text-white text-md md:text-lg font-bold">{link.heading}</h2>}
-                    <Link key={linkIndex} href={link.src} target={link?.target} >
-                    <h1 className="text-sm md:text-lg text-white">{link.title}</h1>
-                    </Link>
+                    <div className="flex flex-col gap-2" key={linkIndex}>
+                      {link?.heading && (
+                        <h2 className="text-white text-md md:text-lg font-bold">
+                          {link.heading}
+                        </h2>
+                      )}
+                      <Link href={link.src} target={link?.target}>
+                        <h1 className="text-sm md:text-lg text-white">
+                          {link.title}
+                        </h1>
+                      </Link>
                     </div>
                   ))}
                 </div>
@@ -42,26 +50,51 @@ const footerData = [
   {
     title: "Company",
     links: [
-      { heading:"", title: "Home", src: "/" },
-      { heading:"", title: "Portfolio", src: "/portfolio", target:"" },
-      { heading:"", title: "Services", src: "/services", target:"" },
-      { heading:"", title: "Industries", src: "/industries", target:"" },
+      { heading: "", title: "Home", src: "/" },
+      { heading: "", title: "Portfolio", src: "/portfolio", target: "" },
+      { heading: "", title: "Services", src: "/services", target: "" },
+      { heading: "", title: "Industries", src: "/industries", target: "" },
     ],
   },
   {
     title: "Reach us out",
     links: [
-      { heading:"For Projects", title: "solutions@divdash.com", src: "/", target:"" },
-      { heading:"For Jobs", title: "apply@divdash.com", src: "/", target:"" },
+      {
+        heading: "For Projects",
+        title: "solutions@divdash.com",
+        src: "/",
+        target: "",
+      },
+      { heading: "For Jobs", title: "apply@divdash.com", src: "/", target: "" },
     ],
   },
   {
     title: "Follow us on Social Media",
     links: [
-      { heading:"", title: "Linkedin", src: "https://www.linkedin.com/company/divdash", target:"blank"},
-      { heading:"", title: "Facebook", src: "https://www.facebook.com/DivDashOfficial", target:"blank"},
-      { heading:"", title: "Instagram", src: "https://www.instagram.com/DivDashOfficial/#", target:"blank"},
-      { heading:"", title: "X", src: "https://x.com/DivDashOfficial", target:"blank"},
+      {
+        heading: "",
+        title: "Linkedin",
+        src: "https://www.linkedin.com/company/divdash",
+        target: "blank",
+      },
+      {
+        heading: "",
+        title: "Facebook",
+        src: "https://www.facebook.com/DivDashOfficial",
+        target: "blank",
+      },
+      {
+        heading: "",
+        title: "Instagram",
+        src: "https://www.instagram.com/DivDashOfficial/#",
+        target: "blank",
+      },
+      {
+        heading: "",
+        title: "X",
+        src: "https://x.com/DivDashOfficial",
+        target: "blank",
+      },
     ],
   },
 ];
