@@ -22,7 +22,7 @@ const HeroSection = ({
           className={`flex flex-col leading-relaxed gap-2 items-center text-center px-4`}
         >
           <Reveal>
-            <h1 className="text-3xl md:text-7xl font-medium text-white">
+            <h1 className="text-3xl md:text-7xl leading-20 font-medium text-white">
               {heading}
             </h1>
             {textCycle && (

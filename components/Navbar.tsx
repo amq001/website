@@ -76,7 +76,7 @@ const Navbar = () => {
           ))}
         </div>
         <div className="flex items-center gap-2 md:gap-4">
-          <Link href={"https://calendar.google.com/calendar/u/0/appointments/schedules/AcZssZ0oSh5ktNL5jQ-Exo-gwAn-ZVy9bsjmzxKEdBDbxMlnQiiiETJCdcowfsTRzUswmaOSZzjsiS6T"} target="blank">
+          <Link href={"https://calendar.app.google/vGkWmHKibQThERD59"} target="blank">
           <Button variant="bordered">Book a Call</Button>
           </Link>
           <div className="md:hidden">

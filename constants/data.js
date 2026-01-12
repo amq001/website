@@ -416,27 +416,33 @@ export const homePage = {
         description: `
        End-to-end applications built with AI at the core. Smart, scalable, and ready to solve real problems.
        `,
+       image:"/images/aiService.webp"
       },
       {
         title: "AI Integration & Automation",
         description: `We add AI to your existing systems to automate tasks, improve efficiency, and unlock smarter workflows.
         `,
+        image:"/images/automationService.webp"
       },
       {
         title: "Product Design & UX",
         description: `Thoughtful design focused on usability, clarity, and experiences users actually enjoy.`,
+        image:"/images/designService.webp"
       },
       {
         title: "AI-Driven Website Automation",
         description: `Smart websites that automate processes, personalize content, and work for your business around the clock.`,
+        image:"/images/webAutomationService.webp"
       },
       {
         title: "Full-Stack Web Development",
         description: `Reliable, high-performance web applications built to scale with your business.`,
+        image:"/images/fullstackService.webp"
       },
       {
         title: "Mobile App Development",
         description: `Fast, intuitive mobile apps that feel natural on both iOS and Android.`,
+        image:"/images/mobileAppService.webp"
       },
     ],
   },
