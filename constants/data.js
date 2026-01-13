@@ -341,11 +341,13 @@ export const homePage = {
         title: "Discover & Align",
         description: `We dive deep into your vision and business objectives to define a clear product roadmap.This step ensures strategic alignment and sets a strong foundation for success.`,
         image: ideateImage,
+        src: "/images/steps/ideateStep.webp"
       },
       {
         title: "Product Design",
         description: `We craft a focused MVP that balances intuitive design with core functionality. Our goal is to maximize user value while validating ideas quickly.`,
         image: designImage,
+        src: "/images/steps/designStep.webp"
       },
       {
         title: "Build & Engineer",
@@ -353,6 +355,7 @@ export const homePage = {
         Every build is optimized for performance, quality, and rapid delivery.
         `,
         image: developmentImage,
+        src: "/images/steps/buildStep.webp"
       },
       {
         title: "Quality Assurance",
@@ -360,6 +363,7 @@ export const homePage = {
         Every user interaction is validated for a polished experience.
         `,
         image: qaImage,
+        src: "/images/steps/testingStep.webp"
       },
       {
         title: "Go Live",
@@ -367,6 +371,7 @@ export const homePage = {
         Our team supports you through release to ensure everything runs smoothly.
         `,
         image: liveImage,
+        src: "/images/steps/liveStep.webp"
       },
       {
         title: "Evolve & Support",
@@ -374,6 +379,7 @@ export const homePage = {
         As your product grows, we help it scale and adapt with confidence.
         `,
         image: supportImage,
+        src: "/images/steps/evolveStep.webp"
       },
     ],
   },
@@ -387,24 +393,28 @@ export const homePage = {
         description:
           "Innovative solutions for patient care and medical management.",
         image: healthImage,
+        src: "/images/industry/ecommerceIndustry.webp"
       },
       {
         title: "Finance",
         description:
           "Secure and efficient financial software for modern banking.",
         image: fintechImage,
+        src: "/images/industry/financeIndustry.webp"
       },
       {
         title: "E-commerce",
         description:
           "Scalable platforms to enhance online shopping experiences.",
         image: ecommerceImage,
+        src: "/images/industry/ecommerceIndustry.webp"
       },
       {
         title: "Logistics",
         description:
           "Optimized systems for supply chain and transportation management.",
         image: logisticsImage,
+        src: "/images/industry/logisticsIndustry.webp"
       },
     ],
   },

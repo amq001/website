@@ -48,7 +48,7 @@ const HorizontalScroll = ({ cards }: Props) => {
   return (
     <section
       ref={sectionRef}
-      className="relative h-[300vh] md:h-[610vh]"
+      className="relative h-[300vh] md:h-[610vh] bg-[linear-gradient(180deg,#000_20%,#55698a_200%)]"
     >
       <div className="sticky top-0 h-screen overflow-hidden flex items-center">
         <motion.div
