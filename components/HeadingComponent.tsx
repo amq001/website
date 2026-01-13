@@ -28,7 +28,7 @@ const HeadingComponent = ({
         <Reveal>
           <h1
             data-variant={variant}
-            className={`text-2xl md:text-5xl leading-relaxed font-medium text-center data-[variant=primary]:text-black data-[variant=secondary]:text-white data-[variant=gradient]:text-transparent data-[variant=gradient]:bg-clip-text data-[variant=gradient]:bg-[linear-gradient(200deg,#000_20%,#F37036_100%)] ${headingClassName}`}
+            className={`text-2xl md:text-5xl leading-10 md:leading-relaxed font-medium text-center data-[variant=primary]:text-black data-[variant=secondary]:text-white data-[variant=gradient]:text-transparent data-[variant=gradient]:bg-clip-text data-[variant=gradient]:bg-[linear-gradient(200deg,#000_20%,#F37036_100%)] ${headingClassName}`}
           >
             {heading}
           </h1>

@@ -53,7 +53,7 @@ const HorizontalScroll = ({ cards }: Props) => {
       <div className="sticky top-0 h-screen overflow-hidden flex items-center">
         <motion.div
           ref={trackRef}
-          className="flex gap-6 px-6 md:px-16"
+          className="flex gap-4 md:gap-6 px-6 md:px-16"
           style={{ x }}
         >
           {cards &&
@@ -61,9 +61,9 @@ const HorizontalScroll = ({ cards }: Props) => {
               <Reveal key={index}>
                 <div
                   key={index}
-                  className="h-[60vh] xl:h-[80vh] w-[280px] sm:w-[50vw] xl:w-[500px] px-8 py-8 xl:py-20 xl:px-16 flex items-center justify-center"
+                  className="h-[70vh] xl:h-[80vh] w-[280px] sm:w-[50vw] xl:w-[500px] px-4 py-4 xl:py-20 xl:px-16 flex items-center justify-center"
                 >
-                  <div className="hover:scale-102 relative overflow-hidden rounded-sm transition-transform shadow-[0_0_10px_#000,0_0_20px_#fff,0_0_30px_#223e8a] duration-300 hover:shadow-[0_0_10px_#223e8a,0_0_20px_#fff,0_0_50px_#223e8a] p-4 flex flex-col gap-4 items-center justify-center h-full md:w-[500px] bg-black xl:rounded-3xl">
+                  <div className="hover:scale-102 relative overflow-hidden rounded-sm transition-transform shadow-[0_0_10px_#000,0_0_20px_#fff,0_0_30px_#223e8a] duration-300 hover:shadow-[0_0_10px_#223e8a,0_0_20px_#fff,0_0_50px_#223e8a] p-4 flex flex-col gap-4 items-center justify-center xl:h-full h-[calc(100%-100px)] md:w-[500px] bg-black xl:rounded-3xl">
                     <div className={`w-full h-full bg-cover bg-center bg-no-repeat absolute opacity-60`}
                     style={{ backgroundImage: `url(${card.image})` }}></div>
                     <div className="flex flex-col gap-2 items-center justify-center">
@@ -73,7 +73,7 @@ const HorizontalScroll = ({ cards }: Props) => {
                         </h2>
                       </Reveal>
                       <Reveal>
-                        <p className="text-white text-sm md:text-lg text-center">
+                        <p className="text-white text-md md:text-xl text-center">
                           {card.description}
                         </p>
                       </Reveal>

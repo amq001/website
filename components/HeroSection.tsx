@@ -19,16 +19,16 @@ const HeroSection = ({
     <WavyBackground className="max-w-screen overflow-x-hidden">
       <div className="relative min-h-screen max-w-screen overflow-x-hidden flex flex-col gap-4 items-center justify-center">
         <div
-          className={`flex flex-col leading-relaxed gap-2 items-center text-center px-4`}
+          className={`flex flex-col leading-relaxed md:gap-2 items-center text-center px-4`}
         >
           <Reveal>
-            <h1 className="text-3xl md:text-7xl leading-20 font-medium text-white">
+            <h1 className="text-2xl md:text-5xl lg:text-7xl leading-10 md:leading-20 font-medium text-white">
               {heading}
             </h1>
             {textCycle && (
               <TextCycleAnimation
                 words={textCycle}
-                className="text-3xl h-2 leading-snug md:text-7xl text-[#ffffff]"
+                className="text-2xl h-2 leading-snug md:text-5xl lg:text-7xl text-[#ffffff]"
               />
             )}
           </Reveal>

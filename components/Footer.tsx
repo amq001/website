@@ -11,7 +11,7 @@ const Footer = () => {
       <div className="relative h-[calc(100vh+600px)] -top-[100vh]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 sticky top-[calc(100vh-600px)] h-[600px] flex flex-col md:flex-row gap-8 md:items-center justify-center md:justify-between">
           <div>
-            <Image src={footerLogo} alt="Logo" className="w-32 md:w-48" />
+            <Image src={footerLogo} alt="Logo" className="w-28 sm:w-32 md:w-48" />
           </div>
           <div className="md:grid md:grid-cols-3 md:gap-auto max-w-3xl flex flex-col gap-8">
             {footerData.map((section, index) => (
@@ -23,7 +23,7 @@ const Footer = () => {
                   {section.links.map((link, linkIndex) => (
                     <div className="flex flex-col gap-2" key={linkIndex}>
                       {link?.heading && (
-                        <h2 className="text-white text-md md:text-lg font-bold">
+                        <h2 className="text-white text-md md:text-lg font-semiboldgit a md:font-bold">
                           {link.heading}
                         </h2>
                       )}
