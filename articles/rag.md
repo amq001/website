@@ -1,6 +1,7 @@
 ---
 title: "RAG Services"
-category: "Ai"
+category: "Artificial Intelligence"
+categorySlug: "artificial-intelligence-blogs"
 image: "/images/blogs/webperformance.webp"
 date: "02-02-2025"
 ---

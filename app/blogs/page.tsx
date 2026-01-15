@@ -13,7 +13,7 @@ const page = () => {
   return (
     <>
       <HeroSection heading="Blogs" description="" />
-      <div className="max-w-7xl px-4 mx-auto md:grid md:grid-cols-2 flex flex-col gap-10">
+      <div className="max-w-7xl px-4 mx-auto flex flex-col gap-10">
         {articles !== null &&
           Object.keys(articles).map((article) => (
             <ArticleItemList

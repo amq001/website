@@ -4,4 +4,5 @@ export type ArticleItem = {
     image: string
     date: string
     category: string
+    categorySlug: string
 }

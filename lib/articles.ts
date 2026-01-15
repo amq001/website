@@ -24,6 +24,7 @@ const getSortedArticles = (): ArticleItem[] => {
             date: matterResult.data.date,
             image: matterResult.data.image,
             category: matterResult.data.category,
+            categorySlug: matterResult.data.categorySlug,
         }
     })
 

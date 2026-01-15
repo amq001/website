@@ -1,5 +1,5 @@
 ---
-title: "Optimizing Website Performance in Next.js"
+title: "Website Third"
 category: "Website"
 categorySlug: "website-blogs"
 image: "/images/blogs/webperformance.webp"
