@@ -17,7 +17,7 @@ const HeroSection = ({
 }: Prop) => {
   return (
     <WavyBackground className="max-w-screen overflow-x-hidden">
-      <div className="relative min-h-screen max-w-screen overflow-x-hidden flex flex-col gap-4 items-center justify-center">
+      <div className="relative min-h-screen max-w-screen w-[calc(100vw-50px)] sm:w-[calc(100vw-100px)] flex flex-col gap-4 items-center justify-center">
         <div
           className={`flex flex-col leading-relaxed md:gap-2 items-center text-center px-4`}
         >
@@ -39,7 +39,7 @@ const HeroSection = ({
           </p>
         </Reveal>
         <div className="flex flex-col gap-4 absolute bottom-20 ">
-          <h3 className="text-white  px-4 text-[18px] text-center font-semibold">
+          <h3 className="text-white text-wrap px-1 sm:px-4 text-[18px] text-center font-semibold">
             Our solutions are recognized by
           </h3>
           <div className="relative w-full overflow-x-hidden">
