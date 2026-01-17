@@ -10,7 +10,7 @@ const page = () => {
   const articles = getCategorisedArticles();
   return (
     <>
-      <HeroSection heading="Blogs" />
+      <HeroSection heading="Blogs" description="Explore insights, trends, and expert perspectives shaping the future of technology and digital innovation." />
       <div className="max-w-7xl px-4 mx-auto flex flex-col gap-10">
         {articles !== null &&
           Object.keys(articles).map((article) => (
