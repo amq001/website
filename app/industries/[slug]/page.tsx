@@ -1,0 +1,58 @@
+import ContactUsSection from "@/components/ContactUsSection";
+import Footer from "@/components/Footer";
+import HeroSection from "@/components/HeroSection";
+import { ReviewsSection } from "@/components/ReviewsSection";
+import { industriesPage } from "@/constants/data";
+import React from "react";
+
+const page = async ({ params }: { params: Promise<{ slug: string }> }) => {
+  const { slug } = await params;
+  const industryDetail = industriesPage?.industries.filter(
+    (industry) => industry.slug === slug
+  );
+  console.log(industryDetail, " - Industry Detail - ");
+  return (
+    <>
+      <HeroSection heading={industryDetail[0].title} />
+      <div className="max-w-7xl px-4 mx-auto">
+        <p className="text-white">
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum
+          facilis distinctio quos velit, rem aliquam ratione, soluta
+          exercitationem id ipsa voluptates quae? Corporis est dolorem
+          necessitatibus minima veritatis saepe doloremque mollitia, unde
+          incidunt temporibus, tempore eveniet animi fugit recusandae harum aut
+          enim doloribus? Explicabo esse quia perspiciatis facere a nesciunt?
+        </p>
+        <p className="text-white">
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum
+          facilis distinctio quos velit, rem aliquam ratione, soluta
+          exercitationem id ipsa voluptates quae? Corporis est dolorem
+          necessitatibus minima veritatis saepe doloremque mollitia, unde
+          incidunt temporibus, tempore eveniet animi fugit recusandae harum aut
+          enim doloribus? Explicabo esse quia perspiciatis facere a nesciunt?
+        </p>
+        <p className="text-white">
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum
+          facilis distinctio quos velit, rem aliquam ratione, soluta
+          exercitationem id ipsa voluptates quae? Corporis est dolorem
+          necessitatibus minima veritatis saepe doloremque mollitia, unde
+          incidunt temporibus, tempore eveniet animi fugit recusandae harum aut
+          enim doloribus? Explicabo esse quia perspiciatis facere a nesciunt?
+        </p>
+        <p className="text-white">
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum
+          facilis distinctio quos velit, rem aliquam ratione, soluta
+          exercitationem id ipsa voluptates quae? Corporis est dolorem
+          necessitatibus minima veritatis saepe doloremque mollitia, unde
+          incidunt temporibus, tempore eveniet animi fugit recusandae harum aut
+          enim doloribus? Explicabo esse quia perspiciatis facere a nesciunt?
+        </p>
+      </div>
+      <ReviewsSection />
+      <ContactUsSection />
+      <Footer />
+    </>
+  );
+};
+
+export default page;

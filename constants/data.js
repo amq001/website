@@ -473,41 +473,47 @@ export const servicesPage = {
       title: "Full-Stack AI Solutions",
       description:
         "We deliver end-to-end full-stack solutions infused with AI, covering frontend, backend, and intelligent systems to build scalable, high-performance products ready for real-world deployment.",
+      slug: 'fullstack-ai-solutions',
       image: fullstackAiService,
       colour: "#c2540a",
     },
     {
       title: "AI Chatbot Development",
       description:
-        "We create intelligent AI chatbots that enhance customer engagement, automate support, and streamline operations, delivering accurate, context-aware conversations across websites, applications, and enterprise systems.",
+      "We create intelligent AI chatbots that enhance customer engagement, automate support, and streamline operations, delivering accurate, context-aware conversations across websites, applications, and enterprise systems.",
+      slug: 'ai-chatbot-development',
       image: chatbotService,
       colour: "#0a53c2",
     },
     {
       title: "Web & Mobile Application Development",
       description:
-        "We design and build scalable web and mobile applications with clean interfaces, robust architectures, and seamless experiences that help businesses launch faster and grow confidently.",
+      "We design and build scalable web and mobile applications with clean interfaces, robust architectures, and seamless experiences that help businesses launch faster and grow confidently.",
+      slug: 'web-&-mobile-application-development',
       image: webMobileService,
       colour: "#ff7c24",
     },
     {
       title: "AI Agents & Autonomous Workflows",
       description:
-        "We develop autonomous AI agents that plan, execute, and adapt to automate complex workflows, enabling smarter decision-making and reducing manual effort across business operations.",
+      "We develop autonomous AI agents that plan, execute, and adapt to automate complex workflows, enabling smarter decision-making and reducing manual effort across business operations.",
+      slug: 'ai-agents-&-autonomous-workflows',
       image: aiWorkflowService,
       colour: "#26549b",
     },
     {
       title: "Chrome Extension Development",
       description:
-        "We build secure, high-performance Chrome extensions focused on productivity, automation, and user efficiency, tailored for startups, SaaS platforms, and internal business tools.",
+      "We build secure, high-performance Chrome extensions focused on productivity, automation, and user efficiency, tailored for startups, SaaS platforms, and internal business tools.",
+      slug: 'chrome-extension-development',
       image: chromeService,
       colour: "#cd2505",
     },
     {
       title: "Custom AI Integrations & Automation",
       description:
-        "We integrate AI seamlessly into existing systems, automating workflows and enhancing functionality to improve efficiency, reduce costs, and transform operations with intelligent automation.",
+      "We integrate AI seamlessly into existing systems, automating workflows and enhancing functionality to improve efficiency, reduce costs, and transform operations with intelligent automation.",
+      slug: 'custom-ai-integrations-&-automation',
       image: aiIntegrationService,
       colour: "#c2540a",
     },
@@ -518,34 +524,38 @@ export const industriesPage = {
   hero: {
     heading: "Industries We Empower",
     description:
-      "Empowering diverse industries through innovative solutions and strategic expertise.",
+    "Empowering diverse industries through innovative solutions and strategic expertise.",
   },
   industries: [
     {
       title: "Healthcare",
       description:
-        "We build secure, compliant digital solutions for healthcare providers, improving patient care, data management, diagnostics, and operational efficiency through scalable and intelligent technology.",
+      "We build secure, compliant digital solutions for healthcare providers, improving patient care, data management, diagnostics, and operational efficiency through scalable and intelligent technology.",
+      slug: 'healthcare',
       image: healthcareIndustry,
       colour: "#0a53c2",
     },
     {
       title: "E-commerce",
       description:
-        "We create high-performance e-commerce platforms with seamless user experiences, smart personalization, secure payments, and scalable architectures that drive conversions and long-term business growth.",
+      "We create high-performance e-commerce platforms with seamless user experiences, smart personalization, secure payments, and scalable architectures that drive conversions and long-term business growth.",
+      slug: 'e-commerce',
       image: ecommerceIndustry,
       colour: "#ff7c24",
     },
     {
       title: "Finance",
       description:
-        "We deliver robust financial technology solutions that enhance security, automate processes, enable real-time insights, and support scalable growth for banks, fintech startups, and financial institutions.",
+      "We deliver robust financial technology solutions that enhance security, automate processes, enable real-time insights, and support scalable growth for banks, fintech startups, and financial institutions.",
+      slug: 'finance',
       image: financeIndustry,
       colour: "#cd2505",
     },
     {
       title: "Logistics",
       description:
-        "We develop intelligent logistics solutions that optimize supply chains, enable real-time tracking, automate operations, and improve efficiency across transportation, warehousing, and distribution networks.",
+      "We develop intelligent logistics solutions that optimize supply chains, enable real-time tracking, automate operations, and improve efficiency across transportation, warehousing, and distribution networks.",
+      slug: 'logistics',
       image: logisticsIndustry,
       colour: "#26549b",
     },

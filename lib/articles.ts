@@ -56,7 +56,6 @@ export const getCategorisedArticles = (): Record<string, ArticleItem[]> => {
 }
 
 export const getArticleData = async (id:string) =>{
-    console.log(id,"ID")
     const fullPath = path.join(articlesDirectory, `${id}.md`)
     const fileContents = fs.readFileSync(fullPath, 'utf-8')
     const matterResult = matter(fileContents)
@@ -70,4 +69,16 @@ export const getArticleData = async (id:string) =>{
         category: matterResult.data.category,
         date: moment(matterResult.data.date,"DD-MM-YYYY").format("MMMM Do YYYY"),
     }
+}
+
+export const getRelatedArticles = (category:string,id:string) : ArticleItem[] =>{
+    const sortedArticles = getSortedArticles()
+    const relatedArticles = sortedArticles.filter(article => article.category == category && article.id !== id)
+    return relatedArticles
+}
+
+export const getSameCategoryArticles = (categorySlug:string) : ArticleItem[] =>{
+    const sortedArticles = getSortedArticles()
+    const relatedArticles = sortedArticles.filter(article => article.categorySlug == categorySlug)
+    return relatedArticles
 }

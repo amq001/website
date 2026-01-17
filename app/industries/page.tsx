@@ -16,6 +16,7 @@ const page = () => {
             title={item.title}
             description={item.description}
             image={item.image}
+            slug={`/industries/${item.slug}`}
             colour={item.colour}
             index={index}
           />

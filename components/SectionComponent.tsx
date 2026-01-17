@@ -1,6 +1,8 @@
 import Image from "next/image";
 import Link from "next/link";
 import Reveal from "./Reveal";
+import Button from "./Button";
+import { FaArrowRight } from "react-icons/fa6";
 
 type Props = {
   title?: string;
@@ -49,9 +51,14 @@ const SectionComponent = ({
             </p>
           </Reveal>
           {slug && (
-            <Link href={`/portfolio/${slug}`}>
-              <button>View More</button>
-            </Link>
+            <Reveal>
+              <Link href={slug}>
+                <Button variant="bordered" className="flex items-center gap-2">
+                  Read More
+                  <FaArrowRight />
+                </Button>
+              </Link>
+            </Reveal>
           )}
         </div>
         <div className="w-full mt-4 md:w-1/2 relative">

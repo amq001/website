@@ -8,17 +8,16 @@ import React from "react";
 
 const page = () => {
   const articles = getCategorisedArticles();
-  console.log(articles);
-
   return (
     <>
-      <HeroSection heading="Blogs" description="" />
+      <HeroSection heading="Blogs" />
       <div className="max-w-7xl px-4 mx-auto flex flex-col gap-10">
         {articles !== null &&
           Object.keys(articles).map((article) => (
             <ArticleItemList
               key={article}
               category={article}
+              // categorySlug={article}
               articles={articles[article]}
             />
           ))}

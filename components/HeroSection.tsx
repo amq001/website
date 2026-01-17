@@ -6,15 +6,11 @@ import { WavyBackground } from "./ui/wavy-background";
 
 type Prop = {
   heading: string;
-  description: string;
+  description?: string;
   textCycle?: string[];
 };
 
-const HeroSection = ({
-  heading,
-  description,
-  textCycle,
-}: Prop) => {
+const HeroSection = ({ heading, description, textCycle }: Prop) => {
   return (
     <WavyBackground className="max-w-screen overflow-x-hidden">
       <div className="relative min-h-screen max-w-screen w-[calc(100vw-50px)] sm:w-[calc(100vw-100px)] flex flex-col gap-4 items-center justify-center">
@@ -33,22 +29,24 @@ const HeroSection = ({
             )}
           </Reveal>
         </div>
-        <Reveal>
-          <p className="text-md text-white md:text-xl font-medium px-4 max-w-2xl text-center">
-            {description}
-          </p>
-        </Reveal>
+        {description && (
+          <Reveal>
+            <p className="text-md text-white md:text-xl font-medium px-4 max-w-2xl text-center">
+              {description}
+            </p>
+          </Reveal>
+        )}
         <div className="flex flex-col gap-4 absolute bottom-20 ">
           <h3 className="text-white text-wrap px-1 sm:px-4 text-[18px] text-center font-semibold">
             Our solutions are recognized by
           </h3>
           <div className="relative w-full overflow-x-hidden">
-          <InfiniteMovingText
-          className="w-screen"
-            items={ourPartners}
-            speed="fast"
+            <InfiniteMovingText
+              className="w-screen"
+              items={ourPartners}
+              speed="fast"
             />
-            </div>
+          </div>
         </div>
       </div>
     </WavyBackground>
