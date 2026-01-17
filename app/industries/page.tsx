@@ -9,7 +9,7 @@ const page = () => {
   return (
     <div className="scroll-smooth">
       <HeroSection heading={industriesPage?.hero?.heading} description={industriesPage?.hero?.description} />
-      <div>
+      <div className="flex flex-col gap-20">
         {industriesPage?.industries.map((item, index) => (
           <SectionComponent
             key={index}

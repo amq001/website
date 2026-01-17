@@ -33,7 +33,7 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
     <>
       <HeroSection heading={project?.title} description={project?.tagline} />
       <div className="max-w-7xl mx-auto p-4 flex flex-col gap-2">
-        <div>
+        <div className="flex flex-col gap-20">
           {project?.details.map((detail, index) => (
             <SectionComponent
               key={index}

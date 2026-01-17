@@ -12,7 +12,7 @@ const page = () => {
         heading={servicesPage.hero.heading}
         description={servicesPage.hero.description}
       />
-      <div>
+      <div className="flex flex-col gap-20">
         {servicesPage.services.map((item, index) => (
           <SectionComponent
             key={index}

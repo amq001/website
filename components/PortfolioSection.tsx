@@ -17,7 +17,7 @@ const PortfolioSection = ({heading, portfolio}: Props) => {
         variant="secondary"
         textCentered={true}
       />
-      <div>
+      <div className="flex flex-col gap-4">
         {portfolio.slice(0, 5).map((project, index) => (
           <StickyCard key={index} {...project} />
         ))}
