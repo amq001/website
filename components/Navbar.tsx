@@ -36,10 +36,10 @@ const Navbar = () => {
 
   const navLinks = [
     { href: "/", label: "Home" },
-    { href: "/portfolio", label: "Portfolio" },
-    { href: "/blogs", label: "Blogs" },
     { href: "/services", label: "Services" },
     { href: "/industries", label: "Industries" },
+    { href: "/portfolio", label: "Portfolio" },
+    { href: "/blogs", label: "Blogs" },
   ];
 
   return (
