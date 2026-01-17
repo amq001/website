@@ -1,16 +1,15 @@
+import React from "react";
 import ContactUsSection from "@/components/ContactUsSection";
 import Footer from "@/components/Footer";
 import HeroSection from "@/components/HeroSection";
 import { ReviewsSection } from "@/components/ReviewsSection";
 import { industriesPage } from "@/constants/data";
-import React from "react";
 
 const page = async ({ params }: { params: Promise<{ slug: string }> }) => {
   const { slug } = await params;
   const industryDetail = industriesPage?.industries.filter(
     (industry) => industry.slug === slug
   );
-  console.log(industryDetail, " - Industry Detail - ");
   return (
     <>
       <HeroSection heading={industryDetail[0].title} />

@@ -1,5 +1,5 @@
 ---
-title: "How Artificial Intelligence in eCommerce Is Transforming Online Retail"
+title: "How Artificial Intelligence In E-commerce Is Transforming Online Retail"
 category: "Artificial Intelligence"
 categorySlug: "artificial-intelligence-blogs"
 image: "/images/blogs/webperformance.webp"
