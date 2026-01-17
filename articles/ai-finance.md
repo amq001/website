@@ -226,13 +226,3 @@ AI augments human roles by automating repetitive tasks, allowing professionals t
 **Artificial Intelligence in Finance** is no longer a future concept—it is a competitive necessity. Financial institutions that invest in secure, compliant, and scalable AI solutions gain efficiency, resilience, and customer trust.
 
 If you’re exploring AI in banking or fintech, contact our experts today to schedule a consultation and discover how AI-powered financial systems can transform your organization.
-
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
